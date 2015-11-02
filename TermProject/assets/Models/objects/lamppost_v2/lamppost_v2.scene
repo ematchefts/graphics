@@ -1,0 +1,24 @@
+<scene export_time="1384735951.331156" previous_export_time="1384735727.848212" exported_by="Paul Marshall" formatVersion="1.0.1" >
+  <nodes >
+    <node name="lamppost_v2" >
+      <position x="0.000000" y="0.000000" z="-0.000000" />
+      <rotation qw="1.000000" qx="0.000000" qy="0.000000" qz="-0.000000" />
+      <scale x="1.000000" y="1.000000" z="1.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <entity name="lamppost_v2" anisotropic_friction="False" inertia_tensor="0.4000000059604645" lock_rot_y="False" lock_rot_x="False" lock_rot_z="False" damping_rot="0.10000000149011612" velocity_max="0.0" friction_x="1.0" friction_y="1.0" friction_z="1.0" actor="False" physics_type="STATIC" lock_trans_z="False" ghost="False" lock_trans_x="False" lock_trans_y="False" mass_radius="1.0" meshFile="lamppost_v2.mesh" mass="1.0" damping_trans="0.03999999910593033" velocity_min="0.0" />
+    </node>
+  </nodes>
+  <externals >
+    <item type="material" >
+      <file name="E:\Pauls Various Works\School Files\CIS\CS 4710\CS4710D\TermProject\assets\Models\objects\lamppost_v2\lamppost_v2.material" />
+    </item>
+  </externals>
+  <environment >
+    <colourAmbient g="0.0" b="0.0" r="0.0" />
+    <colourBackground g="0.014994226396083832" b="0.017387786880135536" r="0.010930988006293774" />
+    <colourDiffuse g="0.014994226396083832" b="0.017387786880135536" r="0.010930988006293774" />
+  </environment>
+</scene>

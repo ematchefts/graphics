@@ -1,0 +1,24 @@
+# Blender3D MTL File: btsStatue.blend
+# Material Count: 2
+newmtl Material_smooth.jpg
+Ns 96.078431
+Ka 0.2 0.2 0.2
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd smooth.jpg
+
+
+newmtl Material_stripe.jpg
+Ns 96.078431
+Ka 0.2 0.2 0.2
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd stripe.jpg
+
+

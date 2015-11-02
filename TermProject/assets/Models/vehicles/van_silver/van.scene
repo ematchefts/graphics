@@ -1,0 +1,97 @@
+<scene previous_export_time="1384494009.504967" export_time="1386609994.299161" formatVersion="1.0.1" exported_by="pmarshall" >
+  <nodes >
+    <node name="Point.001" >
+      <position z="-2.989501" y="1.221280" x="-4.121092" />
+      <rotation qw="1.000000" qz="-0.000000" qy="0.000000" qx="0.000000" />
+      <scale z="1.000000" y="1.000000" x="1.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <light powerScale="1.0" type="point" name="Point.001" >
+        <position z="-2.989501" y="1.221280" x="-4.121092" />
+        <lightAttenuation constant="1.0" linear="0.04" range="5000" quadratic="0.0" />
+        <colourDiffuse g="1.0" r="1.0" b="1.0" />
+        <colourSpecular g="1.0" r="1.0" b="1.0" />
+      </light>
+    </node>
+    <node name="Point" >
+      <position z="-6.716880" y="4.846280" x="2.357654" />
+      <rotation qw="1.000000" qz="-0.000000" qy="0.000000" qx="0.000000" />
+      <scale z="1.000000" y="1.000000" x="1.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <light powerScale="1.0" type="point" name="Point" >
+        <position z="-6.716880" y="4.846280" x="2.357654" />
+        <lightAttenuation constant="1.0" linear="0.04" range="5000" quadratic="0.0" />
+        <colourDiffuse g="1.0" r="1.0" b="1.0" />
+        <colourSpecular g="1.0" r="1.0" b="1.0" />
+      </light>
+    </node>
+    <node name="van" >
+      <position z="-0.000000" y="0.000000" x="0.000000" />
+      <rotation qw="1.000000" qz="-0.000000" qy="0.000000" qx="0.000000" />
+      <scale z="1.000000" y="1.000000" x="1.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <entity lock_rot_z="False" lock_rot_x="False" lock_rot_y="False" damping_rot="0.10000000149011612" lock_trans_y="False" lock_trans_x="False" inertia_tensor="0.4000000059604645" lock_trans_z="False" friction_z="1.0" friction_y="1.0" friction_x="1.0" physics_type="STATIC" meshFile="van.mesh" anisotropic_friction="False" name="van" mass_radius="1.0" ghost="False" actor="False" velocity_min="0.0" mass="1.0" velocity_max="0.0" damping_trans="0.03999999910593033" />
+    </node>
+    <node name="Lamp" >
+      <position z="4.544971" y="5.398400" x="3.706375" />
+      <rotation qw="0.570947" qz="-0.272171" qy="0.755880" qx="0.169076" />
+      <scale z="1.000000" y="1.000000" x="1.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <light powerScale="1.0" type="point" name="Lamp" shadow="true" >
+        <position z="4.544971" y="5.398400" x="3.706375" />
+        <lightAttenuation constant="1.0" linear="0.03333335240683057" range="5000" quadratic="0.0" />
+        <colourDiffuse g="1.0" r="1.0" b="1.0" />
+        <colourSpecular g="1.0" r="1.0" b="1.0" />
+        <colourShadow g="1.0" r="1.0" b="1.0" />
+      </light>
+    </node>
+    <node name="Camera" >
+      <position z="6.507640" y="5.343665" x="7.481132" />
+      <rotation qw="0.781600" qz="-0.212922" qy="0.334251" qx="0.481707" />
+      <scale z="1.000000" y="1.000000" x="1.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <camera name="Camera" fov="0.5033799435163735" projectionType="perspective" >
+        <clipping near="0.10000000149011612" farPlaneDist="100.0" far="100.0" nearPlaneDist="0.10000000149011612" />
+      </camera>
+    </node>
+  </nodes>
+  <externals >
+    <item type="material" >
+      <file name="C:\Users\pmarshall\Documents\Projects\TermProject\assets\Models\vehicles\van_silver\None_carTire.tga.material" />
+    </item>
+    <item type="material" >
+      <file name="C:\Users\pmarshall\Documents\Projects\TermProject\assets\Models\vehicles\van_silver\None_blackWindow.jpg.material" />
+    </item>
+    <item type="material" >
+      <file name="C:\Users\pmarshall\Documents\Projects\TermProject\assets\Models\vehicles\van_silver\Material_vanTaillightRed.tga.material" />
+    </item>
+    <item type="material" >
+      <file name="C:\Users\pmarshall\Documents\Projects\TermProject\assets\Models\vehicles\van_silver\Material_darkRedCar.tga.material" />
+    </item>
+    <item type="material" >
+      <file name="C:\Users\pmarshall\Documents\Projects\TermProject\assets\Models\vehicles\van_silver\Material_blackWindow.jpg.material" />
+    </item>
+    <item type="material" >
+      <file name="C:\Users\pmarshall\Documents\Projects\TermProject\assets\Models\vehicles\van_silver\Material_headlightRed.tga.material" />
+    </item>
+  </externals>
+  <environment >
+    <colourDiffuse g="0.05087608844041824" r="0.05087608844041824" b="0.05087608844041824" />
+    <colourBackground g="0.05087608844041824" r="0.05087608844041824" b="0.05087608844041824" />
+    <colourAmbient g="0.0" r="0.0" b="0.0" />
+  </environment>
+</scene>

@@ -1,0 +1,32 @@
+# Blender3D MTL File: creation.blend
+# Material Count: 3
+newmtl None_creationGlass.tga
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd creationGlass.tga
+
+
+newmtl None_creationGlassBack.tga
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd creationGlassBack.tga
+
+
+newmtl None_blackWindow.jpg
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd darkMetal.tga
+
+

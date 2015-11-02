@@ -1,0 +1,85 @@
+# Blender3D MTL File: willets.blend
+# Material Count: 8
+newmtl Material
+Ns 96.078431
+Ka 0.2 0.2 0.2
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+
+
+newmtl Material_brick.png
+Ns 96.078431
+Ka 0.2 0.2 0.2
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd brick.png
+
+
+newmtl None_blackWindow.jpg
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd blackWindow.jpg
+
+
+newmtl None_shingledRoof.jpg
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd shingledRoof.jpg
+
+
+newmtl Material_brockBrickWindow.png
+Ns 96.078431
+Ka 0.2 0.2 0.2
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd brockBrickWindow.png
+
+
+newmtl None_brick.png
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd brick.png
+
+
+newmtl None_brockBrickWindow.png
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd brockBrickWindow.png
+
+
+newmtl Material_shingledRoof.jpg
+Ns 96.078431
+Ka 0.2 0.2 0.2
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd shingledRoof.jpg
+
+

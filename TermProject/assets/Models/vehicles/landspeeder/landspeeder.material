@@ -1,0 +1,268 @@
+
+material _missing_material_
+{
+    receive_shadows off
+    technique
+    {
+        pass
+        {
+            ambient 0.1 0.1 0.1 1.0
+            diffuse 0.8 0.0 0.0 1.0
+            specular 0.5 0.5 0.5 1.0 12.5
+            emissive 0.3 0.3 0.3 1.0
+        }
+    }
+}
+
+// Base genrated by blender2ogre 0.6.0
+
+material Base 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass Base
+        {
+            ambient 0.2 0.2 0.2 1.0
+            diffuse 0.800000011920929 0.46247654650325387 0.17509326003630843 1.0
+            specular 0.0 0.0 0.0 1.0 12.5
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+        }
+    }
+}
+// BaseCockpit genrated by blender2ogre 0.6.0
+
+material BaseCockpit 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass BaseCockpit
+        {
+            ambient 0.2 0.2 0.2 1.0
+            diffuse 0.026829595641534087 0.026829595641534087 0.026829595641534087 1.0
+            specular 0.19127516448497772 0.19127516448497772 0.19127516448497772 1.0 12.5
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+        }
+    }
+}
+// EngineFronts genrated by blender2ogre 0.6.0
+
+material EngineFronts 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass EngineFronts
+        {
+            ambient 0.2 0.2 0.2 1.0
+            diffuse 0.8005059871503732 0.033289971887286995 0.03365579304616695 1.0
+            specular 0.0 0.0 0.0 1.0 12.5
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+        }
+    }
+}
+// windshield genrated by blender2ogre 0.6.0
+
+material windshield 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass windshield
+        {
+            ambient 0.2 0.2 0.2 0.10067113488912582
+            diffuse 0.6400000190734865 0.6400000190734865 0.6400000190734865 0.10067113488912582
+            specular 0.8959730863571167 0.8959730863571167 0.8959730863571167 0.10067113488912582 12.5
+            emissive 0.0 0.0 0.0 0.10067113488912582
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware none
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend alpha_blend
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+        }
+    }
+}
+// EngineGray genrated by blender2ogre 0.6.0
+
+material EngineGray 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass EngineGray
+        {
+            ambient 0.2 0.2 0.2 1.0
+            diffuse 0.15200789875571274 0.15200789875571274 0.15200789875571274 1.0
+            specular 0.12751677632331848 0.12751677632331848 0.12751677632331848 1.0 15.75
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+        }
+    }
+}
+// sideMetal genrated by blender2ogre 0.6.0
+
+material sideMetal 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass sideMetal
+        {
+            ambient 0.2 0.2 0.2 1.0
+            diffuse 0.4740634035179525 0.4740634035179525 0.4740634035179525 1.0
+            specular 1.0 1.0 1.0 1.0 33.0
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+        }
+    }
+}
+// Toplines genrated by blender2ogre 0.6.0
+
+material Toplines 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass Toplines
+        {
+            ambient 0.2 0.2 0.2 1.0
+            diffuse 0.5769697275306243 0.030371871595321842 0.02302539388839886 1.0
+            specular 0.25757575035095215 0.25757575035095215 0.25757575035095215 1.0 12.5
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+            texture_unit 
+            {
+                texture ls.png
+                tex_address_mode wrap
+                scale 1.0 1.0
+                colour_op alpha_blend
+            }
+        }
+    }
+}

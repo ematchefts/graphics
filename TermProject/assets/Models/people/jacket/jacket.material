@@ -1,0 +1,220 @@
+
+material _missing_material_ 
+{
+    receive_shadows off
+    technique
+    {
+        pass
+        {
+            ambient 0.1 0.1 0.1 1.0
+            diffuse 0.8 0.0 0.0 1.0
+            specular 0.5 0.5 0.5 1.0 12.5
+            emissive 0.3 0.3 0.3 1.0
+        }
+    }
+}
+
+material Body 
+{
+	receive_shadows on
+	technique b2ogre_1323832854.764
+	{
+		pass b2ogre_1323832854.764
+		{
+			ambient 0.2 0.2 0.2 1.0
+			diffuse 0.6400000190734865 0.6400000190734865 0.6400000190734865 1.0
+			specular 0.0 0.0 0.0 1.0 12.5
+			emissive 0.0 0.0 0.0 1.0
+			alpha_to_coverage off
+			colour_write on
+			cull_hardware clockwise
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			illumination_stage 
+			light_clip_planes off
+			light_scissor off
+			lighting on
+			normalise_normals off
+			polygon_mode solid
+			scene_blend one zero
+			scene_blend_op add
+			shading gouraud
+			transparent_sorting on
+			texture_unit b2ogre_1323832854.765
+			{
+				texture body.png
+				tex_address_mode border
+				tex_border_colour 1.0 0.0 1.0
+				scale 1.0 1.0
+				colour_op replace
+			}
+		}
+	}
+}
+material Arm Blue 
+{
+	receive_shadows on
+	technique b2ogre_1323832854.849
+	{
+		pass b2ogre_1323832854.849
+		{
+			ambient 0.03 0.03 0.03 1.0
+			diffuse 0.025550657891491912 0.026994011208325785 0.08197595003211422 1.0
+			specular 0.0 0.0 0.0 1.0 12.5
+			emissive 0.0 0.0 0.0 1.0
+			alpha_to_coverage off
+			colour_write on
+			cull_hardware clockwise
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			illumination_stage 
+			light_clip_planes off
+			light_scissor off
+			lighting on
+			normalise_normals off
+			polygon_mode solid
+			scene_blend one zero
+			scene_blend_op add
+			shading gouraud
+			transparent_sorting on
+		}
+	}
+}
+material Shoes.001 
+{
+	receive_shadows on
+	technique b2ogre_1323832854.85
+	{
+		pass b2ogre_1323832854.85
+		{
+			ambient 0.03 0.03 0.03 1.0
+			diffuse 0.19488491117954254 0.13114146888256073 0.004712978377938271 1.0
+			specular 0.0 0.0 0.0 1.0 12.5
+			emissive 0.0 0.0 0.0 1.0
+			alpha_to_coverage off
+			colour_write on
+			cull_hardware clockwise
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			illumination_stage 
+			light_clip_planes off
+			light_scissor off
+			lighting on
+			normalise_normals off
+			polygon_mode solid
+			scene_blend one zero
+			scene_blend_op add
+			shading gouraud
+			transparent_sorting on
+		}
+	}
+}
+material Dark Blue 
+{
+	receive_shadows on
+	technique b2ogre_1323832854.85
+	{
+		pass b2ogre_1323832854.85
+		{
+			ambient 0.03 0.03 0.03 1.0
+			diffuse 0.008768075090171024 0.00826385853087691 0.031636980647399726 1.0
+			specular 0.0 0.0 0.0 1.0 12.5
+			emissive 0.0 0.0 0.0 1.0
+			alpha_to_coverage off
+			colour_write on
+			cull_hardware clockwise
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			illumination_stage 
+			light_clip_planes off
+			light_scissor off
+			lighting on
+			normalise_normals off
+			polygon_mode solid
+			scene_blend one zero
+			scene_blend_op add
+			shading gouraud
+			transparent_sorting on
+		}
+	}
+}
+material Head Texture 
+{
+	receive_shadows on
+	technique b2ogre_1323832854.85
+	{
+		pass b2ogre_1323832854.85
+		{
+			ambient 0.2 0.2 0.2 1.0
+			diffuse 0.6400000190734865 0.6400000190734865 0.6400000190734865 1.0
+			specular 0.0 0.0 0.0 1.0 12.5
+			emissive 0.0 0.0 0.0 1.0
+			alpha_to_coverage off
+			colour_write on
+			cull_hardware clockwise
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			illumination_stage 
+			light_clip_planes off
+			light_scissor off
+			lighting on
+			normalise_normals off
+			polygon_mode solid
+			scene_blend one zero
+			scene_blend_op add
+			shading gouraud
+			transparent_sorting on
+			texture_unit b2ogre_1323832854.851
+			{
+				texture head.png
+				tex_address_mode border
+				tex_border_colour 1.0 0.0 1.0
+				scale 1.0 1.0
+				colour_op replace
+			}
+		}
+	}
+}
+material Jackets 
+{
+	receive_shadows on
+	technique b2ogre_1323832854.956
+	{
+		pass b2ogre_1323832854.956
+		{
+			ambient 0.2 0.2 0.2 1.0
+			diffuse 0.800000011920929 0.800000011920929 0.800000011920929 1.0
+			specular 0.5 0.5 0.5 1.0 12.5
+			emissive 0.0 0.0 0.0 1.0
+			alpha_to_coverage off
+			colour_write on
+			cull_hardware clockwise
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			illumination_stage 
+			light_clip_planes off
+			light_scissor off
+			lighting on
+			normalise_normals off
+			polygon_mode solid
+			scene_blend one zero
+			scene_blend_op add
+			shading gouraud
+			transparent_sorting on
+			texture_unit b2ogre_1323832854.956
+			{
+				texture jackets.png
+				tex_address_mode border
+				tex_border_colour 1.0 0.0 1.0
+				scale 1.0 1.0
+				colour_op replace
+			}
+		}
+	}
+}

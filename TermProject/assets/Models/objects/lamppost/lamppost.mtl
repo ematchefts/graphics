@@ -1,0 +1,22 @@
+# Blender3D MTL File: lamppost.blend
+# Material Count: 2
+newmtl None_creationGlass.tga
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd creationGlass.tga
+
+
+newmtl None_darkMetal.tga
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd darkMetal.tga
+
+

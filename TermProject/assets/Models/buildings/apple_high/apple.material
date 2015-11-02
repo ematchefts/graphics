@@ -1,0 +1,196 @@
+
+material _missing_material_
+{
+    receive_shadows off
+    technique
+    {
+        pass
+        {
+            ambient 0.1 0.1 0.1 1.0
+            diffuse 0.8 0.0 0.0 1.0
+            specular 0.5 0.5 0.5 1.0 12.5
+            emissive 0.3 0.3 0.3 1.0
+        }
+    }
+}
+
+// brick genrated by blender2ogre 0.6.0
+
+material brick 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass brick
+        {
+            ambient 0.20000000298023224 0.20000000298023224 0.20000000298023224 1.0
+            diffuse 0.0946258008480072 0.015941960737109184 0.009527979418635368 1.0
+            specular 0.16000000476837162 0.06930308445249622 0.03838129100771681 1.0 7.5
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+            texture_unit 
+            {
+                texture brick.jpg
+                tex_address_mode wrap
+                scale 1.0 1.0
+                tex_coord_set 0
+                colour_op modulate
+            }
+            texture_unit 
+            {
+                texture brick_normal.jpg
+                tex_address_mode wrap
+                scale 1.0 1.0
+                tex_coord_set 0
+                colour_op modulate
+            }
+        }
+    }
+}
+// window genrated by blender2ogre 0.6.0
+
+material window 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass window
+        {
+            ambient 0.20000000298023224 0.20000000298023224 0.20000000298023224 1.0
+            diffuse 0.003513153694766069 0.012166810217005164 0.010961669101739957 1.0
+            specular 0.6613333225250244 0.7477230429649353 0.800000011920929 1.0 127.75
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+            texture_unit 
+            {
+                texture window.png
+                tex_address_mode wrap
+                scale 1.0 1.0
+                tex_coord_set 1
+                colour_op modulate
+            }
+        }
+    }
+}
+// concrete genrated by blender2ogre 0.6.0
+
+material concrete 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass concrete
+        {
+            ambient 0.20000000298023224 0.20000000298023224 0.20000000298023224 1.0
+            diffuse 0.47406206837388964 0.47406206837388964 0.47406206837388964 1.0
+            specular 0.05488514981992765 0.05488514981992765 0.05488514981992765 1.0 12.5
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+            texture_unit 
+            {
+                texture concrete.jpg
+                tex_address_mode wrap
+                scale 1.0 1.0
+                tex_coord_set 2
+                colour_op modulate
+            }
+        }
+    }
+}
+// roof genrated by blender2ogre 0.6.0
+
+material roof 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass roof
+        {
+            ambient 0.20000000298023224 0.20000000298023224 0.20000000298023224 1.0
+            diffuse 0.02724423449105373 0.02808302384738659 0.03174339580153518 1.0
+            specular 0.029405957087874413 0.03400825709104538 0.036617591977119446 1.0 50.0
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+            texture_unit 
+            {
+                texture roof.png
+                tex_address_mode wrap
+                scale 1.0 1.0
+                tex_coord_set 3
+                colour_op modulate
+            }
+        }
+    }
+}

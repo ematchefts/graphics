@@ -1,0 +1,24 @@
+<scene previous_export_time="0" exported_by="Paul Marshall" export_time="1387488732.258795" formatVersion="1.0.1" >
+  <nodes >
+    <node name="apple" >
+      <position x="0.000000" y="0.000000" z="-0.000000" />
+      <rotation qx="0.000000" qy="0.000000" qz="-0.000000" qw="1.000000" />
+      <scale x="1.000000" y="1.000000" z="1.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <entity anisotropic_friction="False" lock_trans_y="False" damping_rot="0.10000000149011612" lock_trans_z="False" lock_trans_x="False" velocity_max="0.0" inertia_tensor="0.4000000059604645" physics_type="STATIC" meshFile="apple.mesh" friction_y="1.0" friction_z="1.0" ghost="False" lock_rot_x="False" mass="1.0" lock_rot_y="False" damping_trans="0.03999999910593033" lock_rot_z="False" velocity_min="0.0" mass_radius="1.0" friction_x="1.0" name="apple" actor="False" />
+    </node>
+  </nodes>
+  <externals >
+    <item type="material" >
+      <file name="C:\Users\Paul Marshall\Documents\Projects\TermProject\assets\Models\buildings\apple_high\apple.material" />
+    </item>
+  </externals>
+  <environment >
+    <colourAmbient r="0.0" b="0.0" g="0.0" />
+    <colourBackground r="0.23462021350860596" b="0.4200236201286316" g="0.34272000193595886" />
+    <colourDiffuse r="0.23462021350860596" b="0.4200236201286316" g="0.34272000193595886" />
+  </environment>
+</scene>

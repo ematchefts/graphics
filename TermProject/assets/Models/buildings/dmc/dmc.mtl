@@ -1,0 +1,35 @@
+# Blender3D MTL File: dmcWTexture.blend
+# Material Count: 3
+newmtl Material.002_blackWindow.jpg
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd ../../textures/blackWindow.jpg
+
+
+newmtl Material.002_brick.png
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd ../../textures/brick.png
+
+
+newmtl Material.002_buildingTop.jpg
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd ../../textures/buildingTop.jpg
+
+

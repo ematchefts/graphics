@@ -1,0 +1,135 @@
+
+material _missing_material_
+{
+    receive_shadows off
+    technique
+    {
+        pass
+        {
+            ambient 0.1 0.1 0.1 1.0
+            diffuse 0.8 0.0 0.0 1.0
+            specular 0.5 0.5 0.5 1.0 12.5
+            emissive 0.3 0.3 0.3 1.0
+        }
+    }
+}
+
+// lamp_metal genrated by blender2ogre 0.6.0
+
+material lamp_metal 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass lamp_metal
+        {
+            ambient 0.005999999955296514 0.005999999955296514 0.006499999858438965 1.0
+            diffuse 0.029999999329447746 0.029999999329447746 0.032499998807907104 1.0
+            specular 0.07170727849006653 0.07849529385566711 0.08714012801647186 1.0 50.0
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+            texture_unit 
+            {
+                texture blackMetal.png
+                tex_address_mode wrap
+                scale 1.0 1.0
+                colour_op modulate
+            }
+        }
+    }
+}
+// glass genrated by blender2ogre 0.6.0
+
+material glass 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass glass
+        {
+            ambient 1.0 1.0 1.0 0.75
+            diffuse 1.0 1.0 1.0 0.75
+            specular 0.5 0.5 0.5 0.75 127.75
+            emissive 0.0 0.0 0.0 0.75
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend alpha_blend
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+        }
+    }
+}
+// Banner genrated by blender2ogre 0.6.0
+
+material Banner 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass Banner
+        {
+            ambient 0.800000011920929 0.800000011920929 0.800000011920929 1.0
+            diffuse 0.6400000190734865 0.6400000190734865 0.6400000190734865 1.0
+            specular 0.5 0.5 0.5 1.0 12.5
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+            texture_unit 
+            {
+                texture banner.png
+                tex_address_mode wrap
+                scale 1.0 1.0
+                colour_op modulate
+            }
+        }
+    }
+}

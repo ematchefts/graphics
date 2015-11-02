@@ -1,0 +1,328 @@
+
+material _missing_material_
+{
+    receive_shadows off
+    technique
+    {
+        pass
+        {
+            ambient 0.1 0.1 0.1 1.0
+            diffuse 0.8 0.0 0.0 1.0
+            specular 0.5 0.5 0.5 1.0 12.5
+            emissive 0.3 0.3 0.3 1.0
+        }
+    }
+}
+
+// brick genrated by blender2ogre 0.6.0
+
+material brick 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass brick
+        {
+            ambient 0.20000000298023224 0.20000000298023224 0.20000000298023224 1.0
+            diffuse 0.0946258008480072 0.015941960737109184 0.009527979418635368 1.0
+            specular 0.16000000476837162 0.06930308445249622 0.03838129100771681 1.0 7.5
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+            texture_unit 
+            {
+                texture brick.jpg
+                tex_address_mode wrap
+                scale 1.0 1.0
+                tex_coord_set 0
+                colour_op modulate
+            }
+            texture_unit 
+            {
+                texture brick_normal.jpg
+                tex_address_mode wrap
+                scale 1.0 1.0
+                tex_coord_set 0
+                colour_op modulate
+            }
+        }
+    }
+}
+// window genrated by blender2ogre 0.6.0
+
+material window 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass window
+        {
+            ambient 0.20000000298023224 0.20000000298023224 0.20000000298023224 1.0
+            diffuse 0.003513153694766069 0.012166810217005164 0.010961669101739957 1.0
+            specular 0.6613333225250244 0.7477230429649353 0.800000011920929 1.0 127.75
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+            texture_unit 
+            {
+                texture window.png
+                tex_address_mode wrap
+                scale 1.0 1.0
+                tex_coord_set 1
+                colour_op modulate
+            }
+        }
+    }
+}
+// roof genrated by blender2ogre 0.6.0
+
+material roof 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass roof
+        {
+            ambient 0.20000000298023224 0.20000000298023224 0.20000000298023224 1.0
+            diffuse 0.47406221142503924 0.4300430838770133 0.3317982961505397 1.0
+            specular 0.20000000298023224 0.1847688106413008 0.13912360875492702 1.0 5.0
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+        }
+    }
+}
+// ceiling genrated by blender2ogre 0.6.0
+
+material ceiling 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass ceiling
+        {
+            ambient 0.20000000298023224 0.20000000298023224 0.20000000298023224 1.0
+            diffuse 0.800000011920929 0.7901422618350722 0.7317000021293758 1.0
+            specular 0.25 0.25 0.25 1.0 50.0
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+        }
+    }
+}
+// awning genrated by blender2ogre 0.6.0
+
+material awning 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass awning
+        {
+            ambient 0.20000000298023224 0.20000000298023224 0.20000000298023224 1.0
+            diffuse 0.6400000190734865 0.6068131537260584 0.5072525100000576 1.0
+            specular 0.800000011920929 0.735124837385488 0.48285723452057283 1.0 50.0
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+        }
+    }
+}
+// flashing genrated by blender2ogre 0.6.0
+
+material flashing 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass flashing
+        {
+            ambient 0.20000000298023224 0.20000000298023224 0.20000000298023224 1.0
+            diffuse 0.6400000190734865 0.6400000190734865 0.6400000190734865 1.0
+            specular 0.125 0.125 0.125 1.0 12.5
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+        }
+    }
+}
+// concrete genrated by blender2ogre 0.6.0
+
+material concrete 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass concrete
+        {
+            ambient 0.20000000298023224 0.20000000298023224 0.20000000298023224 1.0
+            diffuse 0.47406206837388964 0.47406206837388964 0.47406206837388964 1.0
+            specular 0.05488514981992765 0.05488514981992765 0.05488514981992765 1.0 12.5
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+            texture_unit 
+            {
+                texture concrete.jpg
+                tex_address_mode wrap
+                scale 1.0 1.0
+                tex_coord_set 3
+                colour_op modulate
+            }
+        }
+    }
+}
+// posts genrated by blender2ogre 0.6.0
+
+material posts 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass posts
+        {
+            ambient 0.20000000298023224 0.20000000298023224 0.20000000298023224 1.0
+            diffuse 0.19164138125838903 0.19164138125838903 0.19164138125838903 1.0
+            specular 0.03252830851865274 0.03252830851865274 0.03252830851865274 1.0 12.5
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+        }
+    }
+}

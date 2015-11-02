@@ -1,0 +1,24 @@
+<scene formatVersion="1.0.1" export_time="1386610521.72677" previous_export_time="1384924579.956455" exported_by="Paul Marshall" >
+  <nodes >
+    <node name="bts" >
+      <position x="0.000000" y="0.000000" z="-0.000000" />
+      <rotation qx="0.000000" qy="0.000000" qz="-0.000000" qw="1.000000" />
+      <scale x="1.000000" y="1.000000" z="1.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <entity velocity_max="0.0" damping_trans="0.03999999910593033" friction_x="1.0" friction_y="1.0" friction_z="1.0" velocity_min="0.0" meshFile="bts.mesh" mass_radius="1.0" inertia_tensor="0.4000000059604645" lock_trans_z="False" damping_rot="0.10000000149011612" physics_type="STATIC" lock_trans_x="False" lock_trans_y="False" lock_rot_y="False" lock_rot_x="False" lock_rot_z="False" mass="1.0" anisotropic_friction="False" actor="False" ghost="False" name="bts" />
+    </node>
+  </nodes>
+  <externals >
+    <item type="material" >
+      <file name="C:\Users\Paul Marshall\Documents\Projects\TermProject\assets\Models\buildings\bts_high\bts.material" />
+    </item>
+  </externals>
+  <environment >
+    <colourAmbient r="0.0" b="0.0" g="0.0" />
+    <colourBackground r="0.1068611815571785" b="0.1473141759634018" g="0.12465580552816391" />
+    <colourDiffuse r="0.1068611815571785" b="0.1473141759634018" g="0.12465580552816391" />
+  </environment>
+</scene>

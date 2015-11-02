@@ -1,0 +1,62 @@
+# Blender MTL File: 'None'
+# Material Count: 6
+
+newmtl Material_blackWindow._blackWindow.jpg
+Ns 92.156863
+Ka 0.2 0.2 0.2
+Kd 0.512000 0.512000 0.512000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd blackWindow.jpg
+
+newmtl Material_darkRedCar.t_redCar.png
+Ns 92.156863
+Ka 0.2 0.2 0.2
+Kd 0.512000 0.512000 0.512000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd blueCar.tga
+
+newmtl Material_headlightRed
+Ns 92.156863
+Ka 0.2 0.2 0.2
+Kd 0.512000 0.512000 0.512000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd headlightBlue.tga
+
+newmtl Material_taillightRed
+Ns 92.156863
+Ka 0.2 0.2 0.2
+Kd 0.512000 0.512000 0.512000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd taillightBlue.tga
+
+newmtl None_blackWindow.jpg
+Ns 92.156863
+Ka 0.2 0.2 0.2
+Kd 0.512000 0.512000 0.512000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd blackWindow.jpg
+
+newmtl None_carTire.tga
+Ns 92.156863
+Ka 0.2 0.2 0.2
+Kd 0.512000 0.512000 0.512000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd carTire.tga

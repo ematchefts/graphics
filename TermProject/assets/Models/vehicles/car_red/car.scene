@@ -1,0 +1,83 @@
+<scene previous_export_time="1384489199.168831" export_time="1386610202.801161" formatVersion="1.0.1" exported_by="pmarshall" >
+  <nodes >
+    <node name="car" >
+      <position z="-0.000000" y="0.000000" x="0.000000" />
+      <rotation qw="1.000000" qz="-0.000000" qy="0.000000" qx="0.000000" />
+      <scale z="1.000000" y="1.000000" x="1.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <entity lock_rot_z="False" lock_rot_x="False" lock_rot_y="False" damping_rot="0.10000000149011612" lock_trans_y="False" lock_trans_x="False" inertia_tensor="0.4000000059604645" lock_trans_z="False" friction_z="1.0" friction_y="1.0" friction_x="1.0" physics_type="STATIC" meshFile="car.mesh" anisotropic_friction="False" name="car" mass_radius="1.0" ghost="False" actor="False" velocity_min="0.0" mass="1.0" velocity_max="0.0" damping_trans="0.03999999910593033" />
+    </node>
+    <node name="Lamp" >
+      <position z="-6.296032" y="3.142526" x="4.076245" />
+      <rotation qw="0.570947" qz="-0.272171" qy="0.755880" qx="0.169076" />
+      <scale z="1.000000" y="1.000000" x="1.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <light powerScale="1.0" type="point" name="Lamp" shadow="true" >
+        <position z="-6.296032" y="3.142526" x="4.076245" />
+        <lightAttenuation constant="1.0" linear="0.03333335240683057" range="5000" quadratic="0.0" />
+        <colourDiffuse g="1.0" r="1.0" b="1.0" />
+        <colourSpecular g="1.0" r="1.0" b="1.0" />
+        <colourShadow g="1.0" r="1.0" b="1.0" />
+      </light>
+    </node>
+    <node name="Camera" >
+      <position z="6.507640" y="5.343665" x="7.481132" />
+      <rotation qw="0.781600" qz="-0.212922" qy="0.334251" qx="0.481707" />
+      <scale z="1.000000" y="1.000000" x="1.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <camera name="Camera" fov="0.5033799435163735" projectionType="perspective" >
+        <clipping near="0.10000000149011612" farPlaneDist="100.0" far="100.0" nearPlaneDist="0.10000000149011612" />
+      </camera>
+    </node>
+    <node name="Lamp.001" >
+      <position z="7.162692" y="5.903862" x="-4.953736" />
+      <rotation qw="0.570947" qz="-0.272171" qy="0.755880" qx="0.169076" />
+      <scale z="1.000000" y="1.000000" x="1.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <light powerScale="1.0" type="point" name="Lamp.001" shadow="true" >
+        <position z="7.162692" y="5.903862" x="-4.953736" />
+        <lightAttenuation constant="1.0" linear="0.03333335240683057" range="5000" quadratic="0.0" />
+        <colourDiffuse g="1.0" r="1.0" b="1.0" />
+        <colourSpecular g="1.0" r="1.0" b="1.0" />
+        <colourShadow g="1.0" r="1.0" b="1.0" />
+      </light>
+    </node>
+  </nodes>
+  <externals >
+    <item type="material" >
+      <file name="C:\Users\pmarshall\Documents\Projects\TermProject\assets\Models\vehicles\car_red\Material_darkRedCar.t_redCar.png.material" />
+    </item>
+    <item type="material" >
+      <file name="C:\Users\pmarshall\Documents\Projects\TermProject\assets\Models\vehicles\car_red\None_blackWindow.jpg.material" />
+    </item>
+    <item type="material" >
+      <file name="C:\Users\pmarshall\Documents\Projects\TermProject\assets\Models\vehicles\car_red\Material_taillightRed.material" />
+    </item>
+    <item type="material" >
+      <file name="C:\Users\pmarshall\Documents\Projects\TermProject\assets\Models\vehicles\car_red\None_carTire.tga.material" />
+    </item>
+    <item type="material" >
+      <file name="C:\Users\pmarshall\Documents\Projects\TermProject\assets\Models\vehicles\car_red\Material_headlightRed.material" />
+    </item>
+    <item type="material" >
+      <file name="C:\Users\pmarshall\Documents\Projects\TermProject\assets\Models\vehicles\car_red\Material_blackWindow._blackWindow.jpg.material" />
+    </item>
+  </externals>
+  <environment >
+    <colourDiffuse g="0.05087608844041824" r="0.05087608844041824" b="0.05087608844041824" />
+    <colourBackground g="0.05087608844041824" r="0.05087608844041824" b="0.05087608844041824" />
+    <colourAmbient g="0.0" r="0.0" b="0.0" />
+  </environment>
+</scene>

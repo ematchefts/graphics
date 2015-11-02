@@ -1,0 +1,56 @@
+# Blender3D MTL File: tyler.blend
+# Material Count: 5
+newmtl Material
+Ns 96.078431
+Ka 0.2 0.2 0.2
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+
+
+newmtl Material_brick.png
+Ns 96.078431
+Ka 0.2 0.2 0.2
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd brick.png
+
+
+newmtl Material_cream.tga
+Ns 96.078431
+Ka 0.2 0.2 0.2
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd cream.tga
+
+
+newmtl Material_blackWindow.jpg
+Ns 96.078431
+Ka 0.2 0.2 0.2
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd blackWindow.jpg
+
+
+newmtl Material_buildingTop.jpg
+Ns 96.078431
+Ka 0.2 0.2 0.2
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd buildingTop.jpg
+
+
