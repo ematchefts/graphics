@@ -24,7 +24,7 @@ material Sphere
     {
         pass Sphere
         {
-            ambient 0.2 0.2 0.2 1.0
+            ambient 0.800000011920929 0.800000011920929 0.800000011920929 1.0
             diffuse 0.6400000190734865 0.6400000190734865 0.6400000190734865 1.0
             specular 0.0 0.0 0.0 1.0 12.5
             emissive 0.0 0.0 0.0 1.0
@@ -59,7 +59,7 @@ material Sign
     {
         pass Sign
         {
-            ambient 0.2 0.2 0.2 1.0
+            ambient 0.800000011920929 0.800000011920929 0.800000011920929 1.0
             diffuse 0.6400000190734865 0.6400000190734865 0.6400000190734865 1.0
             specular 0.0 0.0 0.0 1.0 12.5
             emissive 0.0 0.0 0.0 1.0
@@ -102,9 +102,9 @@ material Wall.001
     {
         pass Wall.001
         {
-            ambient 0.2 0.2 0.2 1.0
-            diffuse 0.800000011920929 0.800000011920929 0.800000011920929 1.0
-            specular 0.0 0.0 0.0 1.0 12.5
+            ambient 0.2000000238418579 0.2000000238418579 0.2000000238418579 1.0
+            diffuse 0.36000002861023006 0.36000002861023006 0.36000002861023006 1.0
+            specular 0.08000000238418581 0.08000000238418581 0.08000000238418581 1.0 12.5
             emissive 0.0 0.0 0.0 1.0
 
             alpha_to_coverage off
@@ -137,7 +137,7 @@ material Aluminum
     {
         pass Aluminum
         {
-            ambient 0.2 0.2 0.2 1.0
+            ambient 0.5789999961853027 0.5789999961853027 0.5789999961853027 1.0
             diffuse 0.20264999521374705 0.20264999521374705 0.20264999521374705 1.0
             specular 0.5 0.5 0.5 1.0 10.0
             emissive 0.0 0.0 0.0 1.0
@@ -172,7 +172,7 @@ material Material.005
     {
         pass Material.005
         {
-            ambient 0.2 0.2 0.2 1.0
+            ambient 0.800000011920929 0.800000011920929 0.800000011920929 1.0
             diffuse 0.6400000190734865 0.6400000190734865 0.6400000190734865 1.0
             specular 0.5 0.5 0.5 1.0 12.5
             emissive 0.0 0.0 0.0 1.0
@@ -207,7 +207,7 @@ material Old Wall
     {
         pass Old Wall
         {
-            ambient 0.2 0.2 0.2 1.0
+            ambient 0.8834018707275391 0.8727089166641235 0.6625682711601257 1.0
             diffuse 0.6183812989783064 0.6108962312613855 0.4637977819136587 1.0
             specular 0.24724702265656084 0.2383187344803943 0.190650295649597 1.0 103.75
             emissive 0.0 0.0 0.0 1.0
@@ -242,7 +242,7 @@ material Material.001
     {
         pass Material.001
         {
-            ambient 0.2 0.2 0.2 1.0
+            ambient 0.800000011920929 0.6901561617851257 0.07200489193201065 1.0
             diffuse 0.6400000190734865 0.5521249376554032 0.05760391440397372 1.0
             specular 0.5 0.5 0.5 1.0 12.5
             emissive 0.0 0.0 0.0 1.0
@@ -277,7 +277,7 @@ material Material
     {
         pass Material
         {
-            ambient 0.2 0.2 0.2 1.0
+            ambient 0.4000000059604645 0.0682598128914833 0.09375212341547012 1.0
             diffuse 0.6400000190734865 0.10921570225381405 0.150003399699977 1.0
             specular 0.5 0.5 0.5 1.0 12.5
             emissive 0.4000000059604645 0.0682598128914833 0.09375212341547012 1.0
@@ -312,7 +312,7 @@ material Material.003
     {
         pass Material.003
         {
-            ambient 0.2 0.2 0.2 1.0
+            ambient 0.800000011920929 0.800000011920929 0.800000011920929 1.0
             diffuse 0.120000006556511 0.120000006556511 0.120000006556511 1.0
             specular 0.5 0.5 0.5 1.0 12.5
             emissive 0.0 0.0 0.0 1.0
@@ -347,7 +347,7 @@ material Mesh
     {
         pass Mesh
         {
-            ambient 0.2 0.2 0.2 1.0
+            ambient 0.800000011920929 0.800000011920929 0.800000011920929 1.0
             diffuse 0.4000000059604645 0.4000000059604645 0.4000000059604645 1.0
             specular 0.0 0.0 0.0 1.0 12.5
             emissive 0.0 0.0 0.0 1.0
@@ -374,6 +374,48 @@ material Mesh
                 texture screen.jpg
                 tex_address_mode wrap
                 scale 0.5 0.5
+                colour_op modulate
+            }
+        }
+    }
+}
+// Wrap genrated by blender2ogre 0.6.0
+
+material Wrap 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass Wrap
+        {
+            ambient 0.2000000238418579 0.2000000238418579 0.2000000238418579 1.0
+            diffuse 0.36000002861023006 0.36000002861023006 0.36000002861023006 1.0
+            specular 0.08000000238418581 0.08000000238418581 0.08000000238418581 1.0 12.5
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+            texture_unit 
+            {
+                texture wrap.png
+                tex_address_mode wrap
+                scale 1.0 1.0
                 colour_op modulate
             }
         }
