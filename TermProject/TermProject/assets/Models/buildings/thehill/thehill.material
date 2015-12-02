@@ -1,0 +1,415 @@
+
+material _missing_material_
+{
+    receive_shadows off
+    technique
+    {
+        pass
+        {
+            ambient 0.1 0.1 0.1 1.0
+            diffuse 0.8 0.0 0.0 1.0
+            specular 0.5 0.5 0.5 1.0 12.5
+            emissive 0.3 0.3 0.3 1.0
+        }
+    }
+}
+
+// Material_brick.png genrated by blender2ogre 0.6.0
+
+material Material_brick.png 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass Material_brick.png
+        {
+            ambient 0.6399999856948853 0.6399999856948853 0.6399999856948853 1.0
+            diffuse 0.5119999961853026 0.5119999961853026 0.5119999961853026 1.0
+            specular 0.5 0.5 0.5 1.0 12.0
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+            texture_unit 
+            {
+                texture brick.png
+                tex_address_mode wrap
+                scale 1.0 1.0
+                colour_op modulate
+            }
+        }
+    }
+}
+// Material Mid Hill genrated by blender2ogre 0.6.0
+
+material Material Mid Hill 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass Material Mid Hill
+        {
+            ambient 0.6399999856948853 0.6399999856948853 0.6399999856948853 1.0
+            diffuse 0.5119999961853026 0.5119999961853026 0.5119999961853026 1.0
+            specular 0.5 0.5 0.5 1.0 12.0
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+        }
+    }
+}
+// Material_brockBrickWi genrated by blender2ogre 0.6.0
+
+material Material_brockBrickWi 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass Material_brockBrickWi
+        {
+            ambient 0.6399999856948853 0.6399999856948853 0.6399999856948853 1.0
+            diffuse 0.5119999961853026 0.5119999961853026 0.5119999961853026 1.0
+            specular 0.5 0.5 0.5 1.0 12.0
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+            texture_unit 
+            {
+                texture brockBrickWindow.png
+                tex_address_mode wrap
+                scale 1.0 1.0
+                colour_op modulate
+            }
+        }
+    }
+}
+// Material_shingledRoof genrated by blender2ogre 0.6.0
+
+material Material_shingledRoof 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass Material_shingledRoof
+        {
+            ambient 0.6399999856948853 0.6399999856948853 0.6399999856948853 1.0
+            diffuse 0.5119999961853026 0.5119999961853026 0.5119999961853026 1.0
+            specular 0.5 0.5 0.5 1.0 125.0
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+            texture_unit 
+            {
+                texture shingledRoof2.jpg
+                tex_address_mode wrap
+                scale 1.0 1.0
+                colour_op modulate
+            }
+        }
+    }
+}
+// None_brick.png genrated by blender2ogre 0.6.0
+
+material None_brick.png 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass None_brick.png
+        {
+            ambient 0.800000011920929 0.800000011920929 0.800000011920929 1.0
+            diffuse 0.6400000190734865 0.6400000190734865 0.6400000190734865 1.0
+            specular 0.800000011920929 0.800000011920929 0.800000011920929 1.0 0.25
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+            texture_unit 
+            {
+                texture brick.png
+                tex_address_mode wrap
+                scale 1.0 1.0
+                colour_op modulate
+            }
+        }
+    }
+}
+// (null) genrated by blender2ogre 0.6.0
+
+material (null) 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass (null)
+        {
+            ambient 0.800000011920929 0.800000011920929 0.800000011920929 1.0
+            diffuse 0.6400000190734865 0.6400000190734865 0.6400000190734865 1.0
+            specular 0.5 0.5 0.5 1.0 12.5
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+        }
+    }
+}
+// None_brockBrickWindow genrated by blender2ogre 0.6.0
+
+material None_brockBrickWindow 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass None_brockBrickWindow
+        {
+            ambient 0.800000011920929 0.800000011920929 0.800000011920929 1.0
+            diffuse 0.6400000190734865 0.6400000190734865 0.6400000190734865 1.0
+            specular 0.800000011920929 0.800000011920929 0.800000011920929 1.0 0.25
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+            texture_unit 
+            {
+                texture brockBrickWindow.png
+                tex_address_mode wrap
+                scale 1.0 1.0
+                colour_op modulate
+            }
+        }
+    }
+}
+// None_shingledRoof.jpg genrated by blender2ogre 0.6.0
+
+material None_shingledRoof.jpg 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass None_shingledRoof.jpg
+        {
+            ambient 0.800000011920929 0.800000011920929 0.800000011920929 1.0
+            diffuse 0.6400000190734865 0.6400000190734865 0.6400000190734865 1.0
+            specular 0.800000011920929 0.800000011920929 0.800000011920929 1.0 0.25
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+            texture_unit 
+            {
+                texture shingledRoof.jpg
+                tex_address_mode wrap
+                scale 1.0 1.0
+                colour_op modulate
+            }
+        }
+    }
+}
+// Window genrated by blender2ogre 0.6.0
+
+material Window 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass Window
+        {
+            ambient 0.6000000238418579 0.6000000238418579 0.6000000238418579 1.0
+            diffuse 0.480000026226044 0.480000026226044 0.480000026226044 1.0
+            specular 0.5 0.5 0.5 1.0 12.5
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+            texture_unit 
+            {
+                texture blackWindowStripes.jpg
+                tex_address_mode wrap
+                scale 1.0 1.0
+                colour_op modulate
+            }
+        }
+    }
+}
+// Material.001 genrated by blender2ogre 0.6.0
+
+material Material.001 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass Material.001
+        {
+            ambient 0.2738310694694519 0.2738310694694519 0.2738310694694519 1.0
+            diffuse 0.21906485883988225 0.21906485883988225 0.21906485883988225 1.0
+            specular 0.5 0.5 0.5 1.0 12.5
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+        }
+    }
+}
