@@ -565,6 +565,7 @@ public class PlacementManager implements ICedarKartManager {
         placements.add(new Placement("WH", "Models/buildings/williams/williams.obj", 80.0f, 8.5f, 162.5f, 3.27f, 0f, 0.1005f, 0f, 0.9949f, 0f, 0f, 0f, 0f));
         placements.add(new Placement("HRS", "Models/buildings/safety/safety.obj", 81.6f, 9.4f, 171.5f, 0.52f, 0f, 0.0984f, 0f, 0.9951f, 0f, 0f, 0f, 0f));
         placements.add(new Placement("PHB", "Models/buildings/pharmacy/PHB.mesh.xml", -60f, 7.0f, 137f, 2f, 0f, -.4f, 0f, -0.2f, 0f, 0f, 0f, 0f));//subbed 8 from x,z
+        placements.add(new Placement("HLL", "Models/buildings/thehill/thehill.mesh.xml", 14f, 11f, 243f, 1.2f, 0f, 1f, 0f, -0.1f, 0f, 0f, 0f, 0f));
         
         if (this.settingsMan.getLevel() == Level.LOW) {
             placements.add(new Placement("BTS", "Models/buildings/bts/bts.mesh.xml", 56f, 2.55f, 95f, 2.50f, 0f, -0.6372f, 0f, 0.7707f, 0f, 0f, 0f, 0f));
