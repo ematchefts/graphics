@@ -1,0 +1,112 @@
+<scene exported_by="jeasterday" export_time="1449434030.404545" previous_export_time="1449431952.667545" formatVersion="1.0.1" >
+  <nodes >
+    <node name="ChemLabs" >
+      <position x="0.000000" z="-0.000000" y="0.000000" />
+      <rotation qy="0.000000" qx="0.000000" qz="-0.000000" qw="1.000000" />
+      <scale x="1.000000" z="1.000000" y="1.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <entity lock_trans_y="False" actor="False" anisotropic_friction="False" velocity_min="0.0" lock_trans_z="False" ghost="False" lock_rot_z="False" physics_type="STATIC" inertia_tensor="0.4000000059604645" lock_rot_y="False" lock_trans_x="False" meshFile="Cube.mesh" mass_radius="1.0" friction_x="1.0" damping_rot="0.1589999943971634" friction_y="1.0" name="Cube" lock_rot_x="False" velocity_max="0.0" damping_trans="0.02539999969303608" mass="1.0" friction_z="1.0" />
+    </node>
+    <node name="Lamp" >
+      <position x="12.294649" z="-1.005454" y="5.903862" />
+      <rotation qy="0.755880" qx="0.169076" qz="-0.272171" qw="0.570947" />
+      <scale x="1.000000" z="1.000000" y="1.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <light type="point" shadow="true" powerScale="3.049999952316284" name="Lamp" >
+        <position x="12.294649" z="-1.005454" y="5.903862" />
+        <lightAttenuation quadratic="0.0" range="5000" constant="1.0" linear="0.03333335240683057" />
+        <colourDiffuse b="1.0" g="1.0" r="1.0" />
+        <colourSpecular b="1.0" g="1.0" r="1.0" />
+        <colourShadow b="1.0" g="1.0" r="1.0" />
+      </light>
+    </node>
+    <node name="Camera" >
+      <position x="7.481132" z="6.507640" y="5.343665" />
+      <rotation qy="0.334251" qx="0.481707" qz="-0.212922" qw="0.781600" />
+      <scale x="1.000000" z="1.000000" y="1.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <camera fov="0.5029332614146953" projectionType="perspective" name="Camera" >
+        <clipping farPlaneDist="100.0" nearPlaneDist="0.10000000149011612" near="0.10000000149011612" far="100.0" />
+      </camera>
+    </node>
+    <node name="Lamp.001" >
+      <position x="-6.655100" z="-14.177793" y="5.903862" />
+      <rotation qy="0.755880" qx="0.169076" qz="-0.272171" qw="0.570947" />
+      <scale x="1.000000" z="1.000000" y="1.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <light type="point" shadow="true" powerScale="3.049999952316284" name="Lamp.001" >
+        <position x="-6.655100" z="-14.177793" y="5.903862" />
+        <lightAttenuation quadratic="0.0" range="5000" constant="1.0" linear="0.03333335240683057" />
+        <colourDiffuse b="1.0" g="1.0" r="1.0" />
+        <colourSpecular b="1.0" g="1.0" r="1.0" />
+        <colourShadow b="1.0" g="1.0" r="1.0" />
+      </light>
+    </node>
+    <node name="Lamp.002" >
+      <position x="-22.751720" z="1.333818" y="5.903862" />
+      <rotation qy="0.755880" qx="0.169076" qz="-0.272171" qw="0.570947" />
+      <scale x="1.000000" z="1.000000" y="1.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <light type="point" shadow="true" powerScale="3.049999952316284" name="Lamp.002" >
+        <position x="-22.751720" z="1.333818" y="5.903862" />
+        <lightAttenuation quadratic="0.0" range="5000" constant="1.0" linear="0.03333335240683057" />
+        <colourDiffuse b="1.0" g="1.0" r="1.0" />
+        <colourSpecular b="1.0" g="1.0" r="1.0" />
+        <colourShadow b="1.0" g="1.0" r="1.0" />
+      </light>
+    </node>
+    <node name="Lamp.003" >
+      <position x="0.152767" z="15.315985" y="5.903862" />
+      <rotation qy="0.755880" qx="0.169076" qz="-0.272171" qw="0.570947" />
+      <scale x="1.000000" z="1.000000" y="1.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <light type="point" shadow="true" powerScale="3.049999952316284" name="Lamp.003" >
+        <position x="0.152767" z="15.315985" y="5.903862" />
+        <lightAttenuation quadratic="0.0" range="5000" constant="1.0" linear="0.03333335240683057" />
+        <colourDiffuse b="1.0" g="1.0" r="1.0" />
+        <colourSpecular b="1.0" g="1.0" r="1.0" />
+        <colourShadow b="1.0" g="1.0" r="1.0" />
+      </light>
+    </node>
+  </nodes>
+  <externals >
+    <item type="material" >
+      <file name="H:\Graphics\chemlabs\Material.material" />
+    </item>
+    <item type="material" >
+      <file name="H:\Graphics\chemlabs\Door.material" />
+    </item>
+    <item type="material" >
+      <file name="H:\Graphics\chemlabs\GrayBrick.material" />
+    </item>
+    <item type="material" >
+      <file name="H:\Graphics\chemlabs\BeigeBrick.material" />
+    </item>
+    <item type="material" >
+      <file name="H:\Graphics\chemlabs\Roof.material" />
+    </item>
+  </externals>
+  <environment >
+    <colourAmbient b="0.0" g="0.0" r="0.0" />
+    <colourDiffuse b="0.05087608844041824" g="0.05087608844041824" r="0.05087608844041824" />
+    <colourBackground b="0.05087608844041824" g="0.05087608844041824" r="0.05087608844041824" />
+  </environment>
+</scene>

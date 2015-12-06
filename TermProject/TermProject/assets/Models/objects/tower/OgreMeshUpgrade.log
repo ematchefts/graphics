@@ -1,0 +1,10 @@
+16:35:46: Creating resource group General
+16:35:46: Creating resource group Internal
+16:35:46: Creating resource group Autodetect
+16:35:46: Registering ResourceManager for type Material
+16:35:46: Registering ResourceManager for type Skeleton
+16:35:46: Registering ResourceManager for type Mesh
+16:35:46: OGRE EXCEPTION(2:InvalidParametersException): Header chunk didn't match either endian: Corrupted stream? in Serializer::determineEndianness at ..\..\..\..\OgreMain\src\OgreSerializer.cpp (line 89)
+16:35:46: Unregistering ResourceManager for type Mesh
+16:35:46: Unregistering ResourceManager for type Skeleton
+16:35:46: Unregistering ResourceManager for type Material

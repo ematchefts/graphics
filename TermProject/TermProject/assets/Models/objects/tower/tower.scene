@@ -1,0 +1,24 @@
+<scene formatVersion="1.0.1" exported_by="Jon" export_time="1448832919.744818" previous_export_time="1448832616.432907" >
+  <nodes >
+    <node name="Tower Sphere" >
+      <position y="0.000000" x="0.000000" z="-0.000000" />
+      <rotation qx="0.000000" qy="0.000000" qw="1.000000" qz="-0.000000" />
+      <scale y="1.000000" x="1.000000" z="1.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <entity physics_type="STATIC" name="tower" damping_trans="0.03999999910593033" lock_trans_z="False" mass="1.0" velocity_max="0.0" lock_rot_z="False" lock_rot_y="False" damping_rot="0.10000000149011612" friction_z="1.0" lock_trans_x="False" friction_y="1.0" velocity_min="0.0" actor="False" ghost="False" lock_rot_x="False" anisotropic_friction="False" lock_trans_y="False" meshFile="tower.mesh" mass_radius="1.0" inertia_tensor="0.4000000059604645" friction_x="1.0" />
+    </node>
+  </nodes>
+  <externals >
+    <item type="material" >
+      <file name="C:\Users\Jon\Desktop\Cedarville Stuff\Graphics\Cedarkart\graphics\TermProject\TermProject\assets\Models\objects\tower\tower.material" />
+    </item>
+  </externals>
+  <environment >
+    <colourBackground r="0.04902484640479088" b="0.24535319209098816" g="0.12065988779067993" />
+    <colourAmbient r="0.0" b="0.0" g="0.0" />
+    <colourDiffuse r="0.04902484640479088" b="0.24535319209098816" g="0.12065988779067993" />
+  </environment>
+</scene>
