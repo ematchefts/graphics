@@ -366,7 +366,7 @@ public class PlayerManager implements ActionListener, AnalogListener, ICedarKart
             }
         } else if (action.equals("Detach")) {
             if (isPressed) {
-                controllingCar = !controllingCar;
+                //controllingCar = !controllingCar;
                 flyCam.setEnabled(!flyCam.isEnabled());
                 chaseCam.setEnabled(!chaseCam.isEnabled());
             }
