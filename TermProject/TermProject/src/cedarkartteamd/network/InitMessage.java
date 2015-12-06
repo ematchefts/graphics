@@ -21,6 +21,7 @@ public class InitMessage extends AbstractMessage {
     
     public InitMessage(int seed, String weather) {
         this.seed = seed;
+        this.weather = weather;
     }
 
     public int getSeed() {
