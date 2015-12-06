@@ -42,6 +42,8 @@ public class GameManager implements ICedarKartManager {
     private boolean setupComplete = false;
     private boolean running = false;
     private boolean multiplayer = false;
+    private boolean firstLoad = false;
+    private boolean secondLoad = false;
     
     private Camera camera;
     
@@ -80,15 +82,10 @@ public class GameManager implements ICedarKartManager {
 
     @Override
     public void start() {
-        this.GUIMan.show();
-
-        // Start the camera with an initial location and rotation for the menu:
-        this.camera.setLocation(new Vector3f(-25.528904f, 9.666285f, 88.33059f));
-        this.camera.setRotation(new Quaternion(-0.036314048f, 0.5483832f, 0.023846028f, 0.83509797f));
-        
-        this.worldMan.makeWorld();
         this.GUIMan.main();
-        this.soundMan.start();
+        this.GUIMan.show();
+        
+        this.firstLoad = true;
     }
     
     public void destroy() {
@@ -275,6 +272,21 @@ public class GameManager implements ICedarKartManager {
             }
             this.soundMan.updateEngineSound(this.worldMan.getPlayerManager().vehicle);
             this.worldMan.update();
+        }
+        else if (this.firstLoad) //this allows us to view the loading screen
+        {
+            firstLoad = false;
+            secondLoad = true;
+        }
+        else if (this.secondLoad)
+        {
+            secondLoad = false;
+            // Start the camera with an initial location and rotation for the menu:
+            this.camera.setLocation(new Vector3f(-25.528904f, 9.666285f, 88.33059f));
+            this.camera.setRotation(new Quaternion(-0.036314048f, 0.5483832f, 0.023846028f, 0.83509797f));
+
+            this.worldMan.makeWorld();
+            this.soundMan.start();
         }
     }
 
