@@ -45,7 +45,8 @@ import java.util.HashMap;
 public class WorldManager implements AnimEventListener, ICedarKartManager {
     
     // cedarvillegse5.png - in progress heightmap fix
-    public static final String WORLD_HEIGHTMAP = "Textures/Terrain/splat/cedarvillegse6.png";
+    public static final String AlphaMap = "Textures/Terrain/splat/bigAlpha2.png";
+    public static final String WORLD_HEIGHTMAP = "Textures/Terrain/splat/cedarvillegse7.png";
     public static final float WORLD_OFFSET = 2.41f;
     public static final float WORLD_Z_SCALE = 0.2f;
     public static final float WORLD_SCALE = 1f;
@@ -300,7 +301,7 @@ public class WorldManager implements AnimEventListener, ICedarKartManager {
         matRock.setBoolean("WardIso", true);
 
         // ALPHA map (for splat textures)
-        matRock.setTexture("AlphaMap", assetManager.loadTexture("Textures/Terrain/splat/bigAlpha.png"));
+        matRock.setTexture("AlphaMap", assetManager.loadTexture(AlphaMap));
 
         // HEIGHTMAP image (for the terrain heightmap)
         Texture heightMapImage = assetManager.loadTexture(WORLD_HEIGHTMAP);

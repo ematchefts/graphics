@@ -134,6 +134,7 @@ public class PlacementManager implements ICedarKartManager {
         ArrayList<Placement> placements = new ArrayList<>();
         placements.add(new Placement("Water Tower", "Models/objects/tower/tower.mesh.xml", -40.5f, 0f, -38f, 1.5f, 0f, 4f, 0f, 0f, 0f, 0f, 0f, 0f));
         placements.add(new Placement("Opened Eyes", "Models/objects/openedEyes/statue.mesh.xml", -10.8f, 0f, 89.5f, 1f, 0f, -0.1918f, 0f, 0f, 0f, 0f, 0f, 0f));
+        //placements.add(new Placement("Opened Eyes", "Models/objects/openedEyes/statue.mesh.xml", -22.330473f, 0f, 79.76693f, 1f, 0f, -0.1918f, 0f, 0f, 10f, 10000f, 10000f, 10000f));
 
         return placements;
     }
@@ -141,6 +142,7 @@ public class PlacementManager implements ICedarKartManager {
     private ArrayList<Placement> createMoveablePlacements() {
         ArrayList<Placement> placements = new ArrayList<>();
         placements.add(new Placement("Yellow Jacket", "Models/people/jacket/jacket.mesh.xml", -30.0f, .8f, 92f, 1.5f, 0.0000f, 0f, 0f, 0.5270f, 250f, .2f, .85f, .2f));
+       // placements.add(new Placement("Yellow Jacket", "Models/people/jacket/jacket.mesh.xml", -30.0f, .8f, 92f, 1.5f, 0.0000f, 0f, 0f, 0.5270f, 250f, 0f, 0f, 0f));
 
         return placements;
     }
@@ -481,6 +483,54 @@ public class PlacementManager implements ICedarKartManager {
         placements.add(new Placement("Tree 33", "Models/objects/trees/NormalTrees/pine.mesh.xml", 9.394054f, 0f, -46.809696f, 0.7f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
         placements.add(new Placement("Tree 34", "Models/objects/trees/NormalTrees/pine.mesh.xml", 7.288539f, 0f, -1.104029f, 0.7f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
         placements.add(new Placement("Tree 35", "Models/objects/trees/NormalTrees/pine.mesh.xml", 33f, 0f, -63.3f, 0.7f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 36", "Models/objects/trees/NormalTrees/pine.mesh.xml", -28.203997f, 0f, 47.099125f, 0.6f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 37", "Models/objects/trees/NormalTrees/pine.mesh.xml", -25.453264f, 0f, 78.43215f,  0.4f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 38", "Models/objects/trees/NormalTrees/pine.mesh.xml", -25.215363f, 0f, 80.43215f,  0.9f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 39", "Models/objects/trees/NormalTrees/pine.mesh.xml", -25.79609f, 0f, 82.43215f,  0.6f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 39", "Models/objects/trees/NormalTrees/pine.mesh.xml", -25.79609f, 0f, 84.43215f,  0.4f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 39", "Models/objects/trees/NormalTrees/pine.mesh.xml", -25.79609f, 0f, 86.43215f,  0.2f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 40", "Models/objects/trees/NormalTrees/pine.mesh.xml", -38.336216f, 0f, 82.35618f,0.4f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 41", "Models/objects/trees/NormalTrees/pine.mesh.xml", -25.926771f, 0f, 69.39488f, 0.3f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 42", "Models/objects/trees/NormalTrees/pine.mesh.xml", -27.459005f, 0, 64.94669f, 0.5f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 43", "Models/objects/trees/NormalTrees/pine.mesh.xml", -27.149876f, 0f, 61.20359f,  0.4f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 44", "Models/objects/trees/NormalTrees/pine.mesh.xml", -27.304193f, 0f, 57.652203f, 0.6f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 45", "Models/objects/trees/NormalTrees/pine.mesh.xml", -28.203997f, 0f, 45.099125f, 0.3f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 46", "Models/objects/trees/NormalTrees/pine.mesh.xml", -28.203997f, 0f, 49.099125f, 0.7f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 47", "Models/objects/trees/NormalTrees/pine.mesh.xml", -28.203997f, 0f, 51.099125f, 0.6f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 48", "Models/objects/trees/NormalTrees/pine.mesh.xml", -28.203997f, 0f, 53.099125f, 0.6f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 49", "Models/objects/trees/NormalTrees/pine.mesh.xml", -28.203997f, 0f, 55.099125f, 0.34f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 50", "Models/objects/trees/NormalTrees/pine.mesh.xml", -28.203997f, 0f, 59.099125f, 0.78f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 51", "Models/objects/trees/NormalTrees/pine.mesh.xml", -28.203997f, 0f, 66.099125f, 0.43f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 52", "Models/objects/trees/NormalTrees/pine.mesh.xml", -28.203997f, 0f, 68.099125f, 0.556f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 53", "Models/objects/trees/NormalTrees/tree1.mesh.xml", -0.80040777f, 0f, 86.53253f,  0.26f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 54", "Models/objects/trees/NormalTrees/tree1.mesh.xml", 5.450004f, 0f, 83.1357f,  0.43f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 55", "Models/objects/trees/NormalTrees/tree1.mesh.xml", 14.7508f, 0f, 78.705795f,  0.3f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 56", "Models/objects/trees/NormalTrees/tree2.mesh.xml", 23.306847f, 0f, 75.1006f,  0.3f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 57", "Models/objects/trees/NormalTrees/tree2.mesh.xml", 29.19138f, 0f, 72.848274f,  0.2f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 58", "Models/objects/trees/NormalTrees/pine.mesh.xml", 62.864952f, 0f, 82.957924f,  0.7f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 59", "Models/objects/trees/NormalTrees/pine.mesh.xml", 61.720745f, 0f, 78.20403f,  0.65f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 60", "Models/objects/trees/NormalTrees/pine.mesh.xml", 60.961662f, 0f, 74.5365f,  0.5f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 61", "Models/objects/trees/NormalTrees/pine.mesh.xml", 58.23333f, 0f, 75.138306f,  0.52f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 62", "Models/objects/trees/NormalTrees/pine.mesh.xml", 58.711983f, 0f, 77.34934f,  0.87f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 63", "Models/objects/trees/NormalTrees/pine.mesh.xml", 55.401184f, 0f, 75.34773f,  0.56f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 64", "Models/objects/trees/NormalTrees/pine.mesh.xml", 56.913944f, 0f, 69.99133f,  0.45f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 65", "Models/objects/trees/NormalTrees/pine.mesh.xml", 58.30478f, 0f, 71.74782f, 0.7f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 70", "Models/objects/trees/NormalTrees/tree1.mesh.xml", 18.270597f, 0f, 77.13105f, .34f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 71", "Models/objects/trees/NormalTrees/tree1.mesh.xml", 33.093697f, 0f, 71.33228f, .3f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 72", "Models/objects/trees/NormalTrees/tree1.mesh.xml", 34.757076f, 0f, 70.64953f, .31f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 73", "Models/objects/trees/NormalTrees/tree1.mesh.xml", 1.3602672f, 0f, 85.07595f, .36f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 74", "Models/objects/trees/NormalTrees/tree2.mesh.xml", 6.9960027f, 0f, 79.52537f, .3f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 75", "Models/objects/trees/NormalTrees/tree2.mesh.xml", 14.355156f, 0f, 71.37179f, .3f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 76", "Models/objects/trees/NormalTrees/tree1.mesh.xml", 25.475555f, 0f, 68.57982f, .28f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 77", "Models/objects/trees/NormalTrees/tree1.mesh.xml", 29.387754f, 0f, 70.87052f, .3f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 78", "Models/objects/trees/NormalTrees/pine.mesh.xml", 55.047264f, 0f, 170.39151f, 0.75f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 79", "Models/objects/trees/NormalTrees/pine.mesh.xml", 65.10013f, 0f, 168.94363f, 0.73f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 80", "Models/objects/trees/NormalTrees/pine.mesh.xml", 66.23416f, 0f, 178.48375f,  0.71f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 81", "Models/objects/trees/NormalTrees/pine.mesh.xml", 71.97295f, 0f, 174.49896f,  0.74f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 82", "Models/objects/trees/NormalTrees/pine.mesh.xml", 69.289764f, 0f, 169.7602f,  0.74f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 83", "Models/Trees/WeepingWillow/tree.j3o", -6.062182f, 0f, 90.91095f,  0.5f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 84", "Models/Trees/WeepingWillow/tree.j3o", 19.765871f, 0f, 75.54302f,  0.5f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 85", "Models/Trees/WeepingWillow/tree.j3o", -17.6928f, 0f, 96.52544f,  0.5f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
 
         return placements;
     }
@@ -565,6 +615,9 @@ public class PlacementManager implements ICedarKartManager {
         placements.add(new Placement("WH", "Models/buildings/williams/williams.obj", 80.0f, 8.5f, 162.5f, 3.27f, 0f, 0.1005f, 0f, 0.9949f, 0f, 0f, 0f, 0f));
         placements.add(new Placement("HRS", "Models/buildings/safety/safety.obj", 81.6f, 9.4f, 171.5f, 0.52f, 0f, 0.0984f, 0f, 0.9951f, 0f, 0f, 0f, 0f));
         placements.add(new Placement("PHB", "Models/buildings/pharmacy/PHB.mesh.xml", -60f, 7.0f, 137f, 2f, 0f, -.4f, 0f, -0.2f, 0f, 0f, 0f, 0f));//subbed 8 from x,z
+        placements.add(new Placement("GOAL", "Models/objects/goal/Goal.mesh.xml", -170.5267f, 7.6f, -36.082657f, 2f, 0.027875403f, 0.68859464f, -0.02650756f, 0.72412544f, 0f, 0f, 0f, 0f));
+        placements.add(new Placement("GOALs", "Models/objects/goal/Goal.mesh.xml",-170.5267f, 7.6f, -152.53018f, 2f, -0.0068384954f, -0.7758777f, -0.0084116375f, 0.63079023f, 0f, 0f, 0f, 0f));
+        
         
         if (this.settingsMan.getLevel() == Level.LOW) {
             placements.add(new Placement("BTS", "Models/buildings/bts/bts.mesh.xml", 56f, 2.55f, 95f, 2.50f, 0f, -0.6372f, 0f, 0.7707f, 0f, 0f, 0f, 0f));
@@ -640,7 +693,7 @@ public class PlacementManager implements ICedarKartManager {
             spatial.setShadowMode(ShadowMode.CastAndReceive);
             rootNode.attachChild(spatial);
             
-            if (placement.filePath.endsWith(".j3o")) {
+            if (placement.filePath.endsWith(".j3o") && !(placement.name.startsWith("Tree"))) {
                 fixAmbient(spatial);
             }
             
@@ -744,7 +797,10 @@ public class PlacementManager implements ICedarKartManager {
             spatial.setShadowMode(ShadowMode.CastAndReceive);
             rootNode.attachChild(spatial);
             
-            if (placement.filePath.endsWith(".j3o")) {
+            //This boolean is used so that the tree model, created by the tree
+            //plugin for JME does not have its model fixed by fixedAmbient(...)
+            boolean isaTree = (placement.name.substring(0, 4).equals("Tree"));
+            if (placement.filePath.endsWith(".j3o") && !isaTree) {
                 fixAmbient(spatial);
             }
             
