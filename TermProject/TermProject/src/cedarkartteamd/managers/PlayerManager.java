@@ -34,17 +34,14 @@ import com.jme3.scene.shape.Box;
 import java.util.Random;
 
 public class PlayerManager implements ActionListener, AnalogListener, ICedarKartManager {
-    
+
     // audio
     private AudioNode audio_engine;
-    
     // For multiplayer:
     private final ActorInit init;
-    
     // Standard Managers
     private AssetManager assetManager;
     private InputManager inputManager;
-    
     // Custom Managers
     private GameManager gameMan;
     private PlacementManager placementMan;
@@ -53,32 +50,32 @@ public class PlayerManager implements ActionListener, AnalogListener, ICedarKart
     private VehicleManager vehicleManager;
     private ControllerManager controls;
     private SettingsManager settingsMan;
-
     private Node rootNode;
     private ViewPort viewPort;
     private Camera camera;
     private FlyByCamera flyCam;
-    
     private Spatial player;
     public ChaseCamera chaseCam;
     ParticleEmitter beeParticles;
     ParticleEmitter snowParticles = null;
     private boolean trayEnabled = false;
     Spatial tray;
-    
     private float steeringisPressed = 0;
     private float accelerationisPressed = 0;
     private float accelerationForce;
     private float boostFactor = 2.0f;
     private boolean controllingCar = true;
+    private boolean acceleratingForward = false;
+    private boolean acceleratingBackward = false;
+    private boolean steeringRight = false;
+    private boolean steeringLeft = false;
     private Vector3f jumpForce;
     private Vector3f gravity;
-    
     protected Node vehicleNode;
     protected VehicleControl vehicle;
     protected Vehicle vehicleType;
-    
-    public PlayerManager(Node rootNode, AssetManager assetManager, 
+
+    public PlayerManager(Node rootNode, AssetManager assetManager,
             InputManager inputManager, Camera camera, FlyByCamera flyCam,
             ViewPort viewPort, GameManager gameMan, PlacementManager placementMan,
             PhysicsManager physicsManager, VehicleManager vehicleManager,
@@ -100,9 +97,9 @@ public class PlayerManager implements ActionListener, AnalogListener, ICedarKart
         this.soundMan = soundMan;
         this.init = init;
     }
-    
+
     /**
-     *  Simple create Character
+     * Simple create Character
      */
     @Override
     public void start() {
@@ -111,14 +108,14 @@ public class PlayerManager implements ActionListener, AnalogListener, ICedarKart
         } else {
             this.vehicleType = Vehicle.valueOf(this.init.getVehicle());
         }
-        
+
         player = assetManager.loadModel(this.vehicleType.path());
         player.setLocalScale(this.vehicleType.scale());
         accelerationForce = this.vehicleType.acceleration();
         jumpForce = this.vehicleType.jumpForce();
-            
+
         buildVehicle(player);
-        
+
         if (this.init == null) {
             setupChaseCamera();
             if (settingsMan.getWeather() == Weather.WINTER) {
@@ -132,6 +129,7 @@ public class PlayerManager implements ActionListener, AnalogListener, ICedarKart
 
     /**
      * Builds the golf cart vehicle with physics
+     *
      * @param player The designed object model
      */
     public void buildVehicle(Spatial player) {
@@ -140,118 +138,118 @@ public class PlayerManager implements ActionListener, AnalogListener, ICedarKart
         this.vehicle = vSet.getVehicle();
         this.rootNode.attachChild(this.vehicleNode);
         this.physicsManager.getBulletAppState().getPhysicsSpace().add(this.vehicle);
-        
+
         this.gravity = this.vehicle.getGravity();
 
         this.resetVehicle();
     }
-    
+
     private void setupChaseCamera() {
-        
+
         camera.setFrustumPerspective(45f, (float) camera.getWidth() / camera.getHeight(), 0.01f, 1000f);
-        
+
         flyCam.setEnabled(false);
         flyCam.setMoveSpeed(30);
         flyCam.setDragToRotate(true);
 
         chaseCam = new ChaseCamera(camera, player, inputManager);
-        
+
         chaseCam.setDefaultDistance(2.5f);
         chaseCam.setMaxDistance(3f);
         chaseCam.setDefaultVerticalRotation(0.2f);
         chaseCam.setTrailingSensitivity(5f);
         chaseCam.setChasingSensitivity(50f);
-        chaseCam.setLookAtOffset(new Vector3f(0,1,0));
+        chaseCam.setLookAtOffset(new Vector3f(0, 1, 0));
         chaseCam.setSmoothMotion(true);
         chaseCam.setTrailingEnabled(true);
     }
-    
+
     private void setupBees() {
         beeParticles = new ParticleEmitter("Emitter", ParticleMesh.Type.Triangle, 3000);
         Material mat_bee = new Material(assetManager, "Common/MatDefs/Misc/Particle.j3md");
         mat_bee.setTexture("Texture", assetManager.loadTexture("Models/trophies/powers/Bee3.png"));
-        beeParticles.setShape(new EmitterSphereShape( Vector3f.ZERO, 2f));
+        beeParticles.setShape(new EmitterSphereShape(Vector3f.ZERO, 2f));
         beeParticles.setMaterial(mat_bee);
         beeParticles.setImagesX(1);
         beeParticles.setImagesY(1);
         beeParticles.setParticlesPerSec(400);
- //       beeParticles.setEndColor(ColorRGBA.Yellow);
+        //       beeParticles.setEndColor(ColorRGBA.Yellow);
         beeParticles.setStartColor(ColorRGBA.Yellow);
-        beeParticles.getParticleInfluencer().setInitialVelocity(new Vector3f(0f,1f,0f)); // particles will move accordingly
+        beeParticles.getParticleInfluencer().setInitialVelocity(new Vector3f(0f, 1f, 0f)); // particles will move accordingly
         beeParticles.setStartSize(0.2f);
         beeParticles.setEndSize(0.4f);
         beeParticles.setGravity(0, 0, 0);
         beeParticles.setLowLife(1f);
         beeParticles.setHighLife(2f);
         beeParticles.getParticleInfluencer().setVelocityVariation(1f); // gives variation to the way the particles move
-        beeParticles.setLocalTranslation(vehicleNode.getLocalTranslation().add(0f,1f,0f));
+        beeParticles.setLocalTranslation(vehicleNode.getLocalTranslation().add(0f, 1f, 0f));
         beeParticles.setEnabled(false);
         rootNode.attachChild(beeParticles);
     }
-    
+
     private void setupSnow() {
         snowParticles = new ParticleEmitter("Emitter", ParticleMesh.Type.Triangle, 3000);
         Material mat_snow = new Material(assetManager, "Common/MatDefs/Misc/Particle.j3md");
         mat_snow.setTexture("Texture", assetManager.loadTexture("Textures/sky/snow1.png"));
-        snowParticles.setShape(new EmitterSphereShape( Vector3f.ZERO, 5f));
+        snowParticles.setShape(new EmitterSphereShape(Vector3f.ZERO, 5f));
         snowParticles.setMaterial(mat_snow);
         snowParticles.setImagesX(1);
         snowParticles.setImagesY(1);
         snowParticles.setParticlesPerSec(50);
         snowParticles.setEndColor(ColorRGBA.Gray);
-        snowParticles.setStartColor(new ColorRGBA(.1f,.1f,.1f,1f));
-        snowParticles.getParticleInfluencer().setInitialVelocity(new Vector3f(0f,-1f,0f)); // particles will move accordingly
+        snowParticles.setStartColor(new ColorRGBA(.1f, .1f, .1f, 1f));
+        snowParticles.getParticleInfluencer().setInitialVelocity(new Vector3f(0f, -1f, 0f)); // particles will move accordingly
         snowParticles.setStartSize(0.5f);
         snowParticles.setEndSize(0.5f);
         snowParticles.setGravity(0, 0, 0);
         snowParticles.setLowLife(5f);
         snowParticles.setHighLife(5f);
         snowParticles.getParticleInfluencer().setVelocityVariation(.1f); // gives variation to the way the particles move
-        snowParticles.setLocalTranslation(vehicleNode.getLocalTranslation().add(0f,1f,0f));
+        snowParticles.setLocalTranslation(vehicleNode.getLocalTranslation().add(0f, 1f, 0f));
         snowParticles.setEnabled(true);
         rootNode.attachChild(snowParticles);
     }
-    
+
     public void setBees(boolean enable) {
         beeParticles.setEnabled(enable);
-        if(!enable){
+        if (!enable) {
             beeParticles.killAllParticles();
         }
     }
-    
-    public void enableTray(){
+
+    public void enableTray() {
         trayEnabled = true;
     }
-    
-    public void shootTray(){
-        
-            Vector3f vehicleDir = Vector3f.ZERO;
-            vehicle.getForwardVector(vehicleDir);
-            Box s = new Box(0.3f,0.03f,0.2f);
-            Geometry geom = new Geometry("tray", s);
-            geom.setLocalTranslation(vehicleNode.getLocalTranslation().add(vehicleDir.add(0f,0.3f,0f)));
 
-            Material mat = new Material(assetManager, "Common/MatDefs/Misc/Unshaded.j3md");
-            mat.setColor("Color", ColorRGBA.Brown);
+    public void shootTray() {
+
+        Vector3f vehicleDir = Vector3f.ZERO;
+        vehicle.getForwardVector(vehicleDir);
+        Box s = new Box(0.3f, 0.03f, 0.2f);
+        Geometry geom = new Geometry("tray", s);
+        geom.setLocalTranslation(vehicleNode.getLocalTranslation().add(vehicleDir.add(0f, 0.3f, 0f)));
+
+        Material mat = new Material(assetManager, "Common/MatDefs/Misc/Unshaded.j3md");
+        mat.setColor("Color", ColorRGBA.Brown);
 //            mat.setTexture("ColorMap", assetManager.loadTexture(placement.filePath
 //                    + placement.getName() + ".png"));
 //            mat.setTexture("GlowMap", assetManager.loadTexture(placement.filePath
 //                    + placement.getName() + "Glow.png"));
-            geom.setMaterial(mat);
+        geom.setMaterial(mat);
 
-            rootNode.attachChild(geom);
-            physicsManager.addBoxPhysics(geom, 5000, new Vector3f(0.3f,0.03f,0.2f));
-            //physicsManager.debugPhysics(true);
-            RigidBodyControl trayPhysics = (RigidBodyControl)geom.getControl(0);
-            trayPhysics.setGravity(Vector3f.ZERO);
-            trayPhysics.applyImpulse(vehicleDir.mult(100000), Vector3f.ZERO);
-            trayEnabled = false;
+        rootNode.attachChild(geom);
+        physicsManager.addBoxPhysics(geom, 5000, new Vector3f(0.3f, 0.03f, 0.2f));
+        //physicsManager.debugPhysics(true);
+        RigidBodyControl trayPhysics = (RigidBodyControl) geom.getControl(0);
+        trayPhysics.setGravity(Vector3f.ZERO);
+        trayPhysics.applyImpulse(vehicleDir.mult(100000), Vector3f.ZERO);
+        trayEnabled = false;
     }
-    
+
     public void impulsePowerup() {
-        vehicle.applyImpulse(jumpForce.mult(3f), new Vector3f(FastMath.nextRandomFloat(),FastMath.nextRandomFloat(),FastMath.nextRandomFloat()));
+        vehicle.applyImpulse(jumpForce.mult(3f), new Vector3f(FastMath.nextRandomFloat(), FastMath.nextRandomFloat(), FastMath.nextRandomFloat()));
     }
-    
+
     public void setGravity(boolean state) {
         if (state) {
             this.vehicle.setGravity(this.gravity);
@@ -259,24 +257,24 @@ public class PlayerManager implements ActionListener, AnalogListener, ICedarKart
             this.vehicle.setGravity(Vector3f.ZERO);
         }
     }
-    
+
     public void randomizeLocation() {
         Random random = new Random(System.currentTimeMillis());
         float size = 512 * WorldManager.WORLD_SCALE;
-        
+
         float x = (random.nextFloat() * size) - (size * 0.5f);
         float z = (random.nextFloat() * size) - (size * 0.5f);
-        
+
         Vector3f newLoc = this.placementMan.getHeightAtLocation(x, z,
                 this.gameMan.getWorld().terrain);
         newLoc.y += 1.0f;
-        
+
         this.vehicle.setPhysicsLocation(newLoc);
     }
 
     private void setupControls() {
         int joystick = settingsMan.getController();
-        
+
         if (joystick == -1) {
             inputManager.addMapping("Left", new KeyTrigger(KeyInput.KEY_A));
             inputManager.addMapping("Alt Left", new KeyTrigger(KeyInput.KEY_LEFT));
@@ -307,7 +305,7 @@ public class PlayerManager implements ActionListener, AnalogListener, ICedarKart
             inputManager.addMapping("Btn Back", new JoyButtonTrigger(joystick, 6));
             inputManager.addMapping("Btn Start", new JoyButtonTrigger(joystick, 7));
             inputManager.addMapping("Btn LS", new JoyButtonTrigger(joystick, 8));
-            
+
             inputManager.addListener(this, "LS Left", "LS Right", "Btn A",
                     "Btn B", "Btn Y", "Btn X", "Btn LS", "Btn Back", "Btn Start");
         }
@@ -316,7 +314,7 @@ public class PlayerManager implements ActionListener, AnalogListener, ICedarKart
     @Override
     public void onAction(String action, boolean isPressed, float tpf) {
         float value = isPressed ? 1f : -1f;
-        
+
         if (action.equals("Location") && !isPressed) {
             System.out.println("Location: " + camera.getLocation());
             System.out.println("Rotation: " + camera.getRotation());
@@ -324,7 +322,7 @@ public class PlayerManager implements ActionListener, AnalogListener, ICedarKart
             System.out.println("Vehicle location: " + getLocation());
             System.out.println("Vehicle rotation: " + getRotation());
         }
-        
+
         if ((action.equals("Left") || action.equals("Alt Left")) && controllingCar) {
             steeringisPressed += .2f * value;
             vehicle.steer(steeringisPressed);
@@ -333,40 +331,43 @@ public class PlayerManager implements ActionListener, AnalogListener, ICedarKart
             vehicle.steer(steeringisPressed);
         } else if ((action.equals("Up") || action.equals("Alt Up") || action.equals("Btn A")) && controllingCar) {
             soundMan.setAccelerating(isPressed);
-    
             accelerationisPressed += accelerationForce * value;
             vehicle.accelerate(accelerationisPressed);
             vehicle.brake(0f);
         } else if ((action.equals("Down") || action.equals("Alt Down") || action.equals("Btn B")) && controllingCar) {
             accelerationisPressed += -accelerationForce * value;
-            
-            if (vehicle.getCurrentVehicleSpeedKmHour() < 10){
+
+            if (vehicle.getCurrentVehicleSpeedKmHour() < 10) {
                 vehicle.accelerate(accelerationisPressed);
                 vehicle.brake(0f);
             } else {
-                if (isPressed){
+                if (isPressed) {
                     vehicle.brake(50f);
                 } else {
                     vehicle.brake(0f);
                 }
             }
-        } else if (action.equals("Brake") && controllingCar) {
+        } else if (action.equals("Brake")) {
             if (isPressed) {
                 vehicle.brake(50f);
             } else {
                 vehicle.brake(0f);
             }
-        } else if ((action.equals("Space") || action.equals("Btn X")) && controllingCar) {
+        } else if ((action.equals("Space") || action.equals("Btn X"))) {
             if (isPressed && vehicle.getPhysicsLocation().y < 10f) {
                 vehicle.applyImpulse(jumpForce, Vector3f.ZERO);
             }
-        } else if ((action.equals("Reset") || action.equals("Btn Back")) && controllingCar) {
-            if(isPressed) {
+        } else if ((action.equals("Reset") || action.equals("Btn Back"))) {
+            if (isPressed) {
                 resetVehicle();
             }
         } else if (action.equals("Detach")) {
             if (isPressed) {
-                //controllingCar = !controllingCar;
+                accelerationisPressed = 0f;
+                vehicle.accelerate(accelerationisPressed);
+                steeringisPressed = 0f;
+                vehicle.steer(steeringisPressed);
+                controllingCar = !controllingCar;
                 flyCam.setEnabled(!flyCam.isEnabled());
                 chaseCam.setEnabled(!chaseCam.isEnabled());
             }
@@ -394,15 +395,15 @@ public class PlayerManager implements ActionListener, AnalogListener, ICedarKart
         if (value >= ControllerManager.db || value <= -ControllerManager.db) {
             value = ControllerManager.shape(value);
 
-            if (action.equals("LS Left") && controllingCar) {
+            if (action.equals("LS Left")) {
                 steeringisPressed = .2f * value;
                 vehicle.steer(steeringisPressed);
-            } else if (action.equals("LS Right") && controllingCar) {
+            } else if (action.equals("LS Right")) {
                 steeringisPressed = -.2f * value;
                 vehicle.steer(steeringisPressed);
             }
         } else {
-            if ((action.equals("LS Left") || action.equals("LS Right")) && controllingCar) {
+            if ((action.equals("LS Left") || action.equals("LS Right"))) {
                 steeringisPressed = 0;
                 vehicle.steer(steeringisPressed);
             }
@@ -412,27 +413,26 @@ public class PlayerManager implements ActionListener, AnalogListener, ICedarKart
     public double getVelocity() {
         return vehicle.getLinearVelocity().length();
     }
-    
     private boolean newLap = false;
+
     public boolean isNewLap(Vector3f vector, double maxDistance) {
         double distance = vehicle.getPhysicsLocation().distance(vector);
-        
-        if(distance < maxDistance) {
-            if(!newLap) {
+
+        if (distance < maxDistance) {
+            if (!newLap) {
                 newLap = true;
                 return true;
             }
         } else {
             newLap = false;
         }
-        
+
         return false;
     }
-    
+
     /**
      * Resets the Vehicle to starting position
      */
-    
     public void initVehicle() {
         if (this.init == null) {
             vehicle.setPhysicsRotation(this.placementMan.playerRotation(this.gameMan.getId()));
@@ -445,7 +445,7 @@ public class PlayerManager implements ActionListener, AnalogListener, ICedarKart
         vehicle.setAngularVelocity(Vector3f.ZERO);
         vehicle.resetSuspension();
     }
-    
+
     public void resetVehicle() {
         Vector3f newLoc = this.placementMan.randomResetPoint();
         vehicle.setPhysicsRotation(this.placementMan.rotationForLocation(newLoc));
@@ -457,16 +457,16 @@ public class PlayerManager implements ActionListener, AnalogListener, ICedarKart
 
     public void update() {
         this.gameMan.sendUpdate(vehicle);
-        beeParticles.setLocalTranslation(vehicleNode.getLocalTranslation().add(0f,1f,0f));
-        if(snowParticles != null){
-            snowParticles.setLocalTranslation(vehicleNode.getLocalTranslation().add(0f,1f,0f));
+        beeParticles.setLocalTranslation(vehicleNode.getLocalTranslation().add(0f, 1f, 0f));
+        if (snowParticles != null) {
+            snowParticles.setLocalTranslation(vehicleNode.getLocalTranslation().add(0f, 1f, 0f));
         }
     }
-    
+
     public Vector3f getLocation() {
         return vehicle.getPhysicsLocation();
     }
-    
+
     public Quaternion getRotation() {
         return vehicle.getPhysicsRotation();
     }

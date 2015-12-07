@@ -15,7 +15,7 @@ public class InitMessage extends AbstractMessage {
     private String weather;
     
     public InitMessage() {
-        this.seed = -1;
+        this.seed = -3;
         this.weather = "SUNRISE";
     }
     
