@@ -1,0 +1,86 @@
+// white.002 genrated by blender2ogre 0.6.0
+
+material _missing_material_ 
+{
+    receive_shadows off
+    technique
+    {
+        pass
+        {
+            ambient 0.1 0.1 0.1 1.0
+            diffuse 0.8 0.0 0.0 1.0
+            specular 0.5 0.5 0.5 1.0 12.5
+            emissive 0.3 0.3 0.3 1.0
+        }
+    }
+}
+
+material white.002 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass white.002
+        {
+            ambient 0.4262121021747589 0.4262121021747589 0.4262121021747589 1.0
+            diffuse 0.3409696868206513 0.3409696868206513 0.3409696868206513 1.0
+            specular 0.5 0.5 0.5 1.0 12.5
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+        }
+    }
+}
+
+// black.002 genrated by blender2ogre 0.6.0
+
+material black.002 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass black.002
+        {
+            ambient 0.034111324697732925 0.034111324697732925 0.034111324697732925 1.0
+            diffuse 0.02728906016482502 0.02728906016482502 0.02728906016482502 1.0
+            specular 0.5 0.5 0.5 1.0 12.5
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+        }
+    }
+}

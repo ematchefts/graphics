@@ -1,0 +1,42 @@
+<scene exported_by="rjacubec" previous_export_time="0" formatVersion="1.0.1" export_time="1449500202.207667" >
+  <nodes >
+    <node name="Icosphere.002" >
+      <position x="-1.556969" y="1.876132" z="-2.526160" />
+      <rotation qy="0.000000" qw="1.000000" qx="0.000000" qz="-0.000000" />
+      <scale x="1.000000" y="1.000000" z="1.000000" />
+      <user_data value='&lt;bpy id prop: owner="OBIcosphere.002", name="cycles_visibility", address=0x0000000002995BC8&gt;' type="IDPropertyGroup" name="cycles_visibility" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <entity lock_trans_z="False" lock_trans_x="False" friction_z="1.0" meshFile="Icosphere.002.mesh" ghost="False" name="Icosphere.002" lock_rot_y="False" actor="False" anisotropic_friction="False" friction_x="1.0" inertia_tensor="0.4000000059604645" mass="1.0" damping_rot="0.10000000149011612" velocity_min="0.0" damping_trans="0.03999999910593033" physics_type="STATIC" lock_rot_x="False" mass_radius="1.0" velocity_max="0.0" lock_rot_z="False" lock_trans_y="False" friction_y="1.0" >
+        <user_data value='&lt;bpy id prop: owner="MEIcosphere.002", name="cycles", address=0x0000000002994DB8&gt;' type="IDPropertyGroup" name="cycles" />
+      </entity>
+    </node>
+    <node name="Camera" >
+      <position x="4.245815" y="3.568308" z="-7.040840" />
+      <rotation qy="0.662440" qw="0.500249" qx="0.336032" qz="-0.444981" />
+      <scale x="1.000000" y="1.000000" z="1.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <camera fov="0.5033799435163735" projectionType="perspective" name="Camera" >
+        <clipping far="100.0" nearPlaneDist="0.10000000149011612" farPlaneDist="100.0" near="0.10000000149011612" />
+      </camera>
+    </node>
+  </nodes>
+  <externals >
+    <item type="material" >
+      <file name="C:\Users\rjacubec.CL-ENS242-09\Desktop\soccerBall\white.002.material" />
+    </item>
+    <item type="material" >
+      <file name="C:\Users\rjacubec.CL-ENS242-09\Desktop\soccerBall\black.002.material" />
+    </item>
+  </externals>
+  <environment >
+    <colourBackground b="0.05087608844041824" r="0.05087608844041824" g="0.05087608844041824" />
+    <colourAmbient b="0.0" r="0.0" g="0.0" />
+    <colourDiffuse b="0.05087608844041824" r="0.05087608844041824" g="0.05087608844041824" />
+  </environment>
+</scene>

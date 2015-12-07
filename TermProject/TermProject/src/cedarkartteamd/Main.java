@@ -3,6 +3,9 @@ package cedarkartteamd;
 import cedarkartteamd.managers.GameManager;
 import com.jme3.app.SimpleApplication;
 import com.jme3.system.AppSettings;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import javax.imageio.ImageIO;
 
 public class Main extends SimpleApplication {
     // Constants
@@ -13,6 +16,7 @@ public class Main extends SimpleApplication {
         AppSettings settings = new AppSettings(true);
         settings.setUseJoysticks(true);
         settings.setSettingsDialogImage("Textures/icons/fullImage.png");
+        setIcons(settings);
         settings.setResolution(1024, 768);
         app.setSettings(settings);
         app.start();
@@ -46,5 +50,18 @@ public class Main extends SimpleApplication {
 
     public GameManager getGameMan() {
         return gameMan;
+    }
+    
+     public static void setIcons(AppSettings settings){
+         try {
+            settings.setIcons(new BufferedImage[]{
+                         ImageIO.read(new File("icon256.png")),
+                         ImageIO.read(new File("icon128.png")),
+                         ImageIO.read(new File("icon32.png")),
+                         ImageIO.read(new File("icon16.png")),
+                    });
+        } catch (Exception e) {
+             System.out.println(e.toString());
+        }
     }
 }

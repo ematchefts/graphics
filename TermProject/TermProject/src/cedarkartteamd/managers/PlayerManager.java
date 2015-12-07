@@ -31,7 +31,11 @@ import com.jme3.math.Quaternion;
 import com.jme3.math.Vector3f;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.shape.Box;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.PrintWriter;
 import java.util.Random;
+import java.util.Scanner;
 
 public class PlayerManager implements ActionListener, AnalogListener, ICedarKartManager {
 
@@ -276,6 +280,8 @@ public class PlayerManager implements ActionListener, AnalogListener, ICedarKart
         int joystick = settingsMan.getController();
 
         if (joystick == -1) {
+            //inputManager.addMapping("Tree", new KeyTrigger(KeyInput.KEY_T));
+        
             inputManager.addMapping("Left", new KeyTrigger(KeyInput.KEY_A));
             inputManager.addMapping("Alt Left", new KeyTrigger(KeyInput.KEY_LEFT));
             inputManager.addMapping("Right", new KeyTrigger(KeyInput.KEY_D));
@@ -292,7 +298,7 @@ public class PlayerManager implements ActionListener, AnalogListener, ICedarKart
             inputManager.addMapping("Location", new KeyTrigger(KeyInput.KEY_E));
             inputManager.addMapping("Pause", new KeyTrigger(KeyInput.KEY_ESCAPE));
             inputManager.addMapping("Powerup", new KeyTrigger(KeyInput.KEY_TAB));
-            inputManager.addListener(this, "Left", "Alt Left", "Right", "Alt Right",
+            inputManager.addListener(this,"Tree", "Left", "Alt Left", "Right", "Alt Right",
                     "Up", "Alt Up", "Down", "Alt Down", "Brake", "Space", "Reset",
                     "Detach", "Turbo", "Location", "Pause", "Powerup");
         } else if (joystick < this.controls.availableJoysticks()) {
@@ -322,6 +328,33 @@ public class PlayerManager implements ActionListener, AnalogListener, ICedarKart
             System.out.println("Vehicle location: " + getLocation());
             System.out.println("Vehicle rotation: " + getRotation());
         }
+//         if (action.equals("Tree")&& !isPressed ) {
+//            System.out.println("Location: " + camera.getLocation());
+//            System.out.println("Rotation: " + camera.getRotation());
+//            System.out.println("Direction: " + camera.getDirection());
+//            System.out.println("Vehicle location: " + getLocation());
+//            System.out.println("Vehicle rotation: " + getRotation());
+//            String location = String.valueOf(camera.getLocation().x) + "f" + ", " + 
+//                    /*String.valueOf(camera.getLocation().y) + "f"*/ "0f" + ", " + 
+//                    String.valueOf(camera.getLocation().z) + "f";
+//            
+//            try{
+//                Scanner sc = new Scanner( new File("C:\\Users\\rjacubec.CL-ENS242-09\\Desktop\\number.txt"));
+//                String tree = sc.nextLine();
+//                String code = "placements.add(new Placement(" + "\""+ tree + "\"" + ", \"Models/objects/trees/NormalTrees/pine.mesh.xml\", "+ location
+//                    +", s 0.7f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));" ; 
+//                tree =  "Tree "+ String.valueOf(1 + Integer.valueOf(tree.substring(5, tree.length())));
+//                PrintWriter pw = new PrintWriter(new FileOutputStream("C:\\Users\\rjacubec.CL-ENS242-09\\Desktop\\locations.txt", true));
+//                pw.println(code);
+//                pw.close();
+//                pw = new PrintWriter(new File("C:\\Users\\rjacubec.CL-ENS242-09\\Desktop\\number.txt"));
+//                pw.println(tree);
+//                pw.close();
+//            }
+//            catch(Exception e){
+//                System.out.println(e.toString());
+//            }
+//         }
 
         if ((action.equals("Left") || action.equals("Alt Left")) && controllingCar) {
             steeringisPressed += .2f * value;
@@ -388,6 +421,7 @@ public class PlayerManager implements ActionListener, AnalogListener, ICedarKart
             }
         }
     }
+    
 
     @Override
     public void onAnalog(String action, float value, float tpf) {

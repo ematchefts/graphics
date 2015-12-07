@@ -184,7 +184,16 @@ public class PlacementManager implements ICedarKartManager {
         placements.add(new Placement("Lamppost 34", "Models/objects/lamppost_v2_banner/lamppost_v2_banner.mesh.xml", -17.6f, 1.435f, 144.5f, 2.2f, 0.0000f, 0.5028f, 0.0000f, 0.8644f, 5000f, .2f, 1.43f, .2f));
         placements.add(new Placement("Lamppost 35", "Models/objects/lamppost_v2_banner/lamppost_v2_banner.mesh.xml", -10.8f, 1.435f, 148.1f, 2.2f, 0.0000f, 0.5028f, 0.0000f, 0.8644f, 5000f, .2f, 1.43f, .2f));
         placements.add(new Placement("Lamppost 36", "Models/objects/lamppost_v2_banner/lamppost_v2_banner.mesh.xml", -3.8f, 1.435f, 151.7f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 5000f, .2f, 1.43f, .2f));
-
+        //hill lights
+        placements.add(new Placement("Lamppost 37","Models/objects/lamppost_v2_banner/lamppost_v2_banner.mesh.xml", 22.00449f, 1.435f, 233.24387f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 5000f, .2f, 1.43f, .2f));
+        placements.add(new Placement("Lamppost 38","Models/objects/lamppost_v2_banner/lamppost_v2_banner.mesh.xml", 18.82552f, 1.435f, 233.94736f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 5000f, .2f, 1.43f, .2f));
+        placements.add(new Placement("Lamppost 39", "Models/objects/lamppost_v2_banner/lamppost_v2_banner.mesh.xml", 13.139362f, 1.435f, 235.2057f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 5000f, .2f, 1.43f, .2f));
+        placements.add(new Placement("Lamppost 40", "Models/objects/lamppost_v2_banner/lamppost_v2_banner.mesh.xml", 6.625704f,1.435f, 236.64716f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 5000f, .2f, 1.43f, .2f));
+        placements.add(new Placement("Lamppost 41", "Models/objects/lamppost_v2_banner/lamppost_v2_banner.mesh.xml", 2.0005705f, 1.435f, 237.65288f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 5000f, .2f, 1.43f, .2f));
+        placements.add(new Placement("Lamppost 42", "Models/objects/lamppost_v2_banner/lamppost_v2_banner.mesh.xml", -0.9674078f, 1.435f, 238.31314f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 5000f, .2f, 1.43f, .2f));
+        placements.add(new Placement("Lamppost 43", "Models/objects/lamppost_v2_banner/lamppost_v2_banner.mesh.xml", -9.907354f, 1.435f, 240.74576f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 5000f, .2f, 1.43f, .2f));
+        placements.add(new Placement("Lamppost 44", "Models/objects/lamppost_v2_banner/lamppost_v2_banner.mesh.xml", -6.6681237f, 1.435f, 239.46796f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 5000f, .2f, 1.43f, .2f));
+        
         return placements;
     }
 
@@ -227,7 +236,18 @@ public class PlacementManager implements ICedarKartManager {
         placements.add(new Placement("Lamppost 34", "Models/objects/lamppost_v2_banner/lamppost_v2_banner_noglass.mesh.xml", -17.6f, 1.435f, 144.5f, 2.2f, 0.0000f, 0.5028f, 0.0000f, 0.8644f, 5000f, .2f, 1.43f, .2f));
         placements.add(new Placement("Lamppost 35", "Models/objects/lamppost_v2_banner/lamppost_v2_banner_noglass.mesh.xml", -10.8f, 1.435f, 148.1f, 2.2f, 0.0000f, 0.5028f, 0.0000f, 0.8644f, 5000f, .2f, 1.43f, .2f));
         placements.add(new Placement("Lamppost 36", "Models/objects/lamppost_v2_banner/lamppost_v2_banner_noglass.mesh.xml", -3.8f, 1.435f, 151.7f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 5000f, .2f, 1.43f, .2f));
-
+        //hill lights
+        placements.add(new Placement("Lamppost 37", "Models/objects/lamppost_v2_banner/lamppost_v2_banner_noglass.mesh.xml", 22.00449f, 1.435f, 233.24387f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 5000f, .2f, 1.43f, .2f));
+        placements.add(new Placement("Lamppost 38", "Models/objects/lamppost_v2_banner/lamppost_v2_banner_noglass.mesh.xml", 18.82552f, 1.435f, 233.94736f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 5000f, .2f, 1.43f, .2f));
+        placements.add(new Placement("Lamppost 39", "Models/objects/lamppost_v2_banner/lamppost_v2_banner_noglass.mesh.xml", 13.139362f, 1.435f, 235.2057f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 5000f, .2f, 1.43f, .2f));
+        placements.add(new Placement("Lamppost 40", "Models/objects/lamppost_v2_banner/lamppost_v2_banner_noglass.mesh.xml", 6.625704f,1.435f, 236.64716f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 5000f, .2f, 1.43f, .2f));
+        placements.add(new Placement("Lamppost 41", "Models/objects/lamppost_v2_banner/lamppost_v2_banner_noglass.mesh.xml", 2.0005705f, 1.435f, 237.65288f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 5000f, .2f, 1.43f, .2f));
+        placements.add(new Placement("Lamppost 42", "Models/objects/lamppost_v2_banner/lamppost_v2_banner_noglass.mesh.xml", -0.9674078f, 1.435f, 238.31314f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 5000f, .2f, 1.43f, .2f));
+        placements.add(new Placement("Lamppost 43", "Models/objects/lamppost_v2_banner/lamppost_v2_banner_noglass.mesh.xml", -9.907354f, 1.435f, 240.74576f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 5000f, .2f, 1.43f, .2f));
+        placements.add(new Placement("Lamppost 44", "Models/objects/lamppost_v2_banner/lamppost_v2_banner_noglass.mesh.xml", -6.6681237f, 1.435f, 239.46796f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 5000f, .2f, 1.43f, .2f));
+        
+        
+        
         return placements;
     }
 
@@ -270,7 +290,16 @@ public class PlacementManager implements ICedarKartManager {
         placements.add(new Placement("Lampglow 34", "Models/objects/lamppost_v2/lamppost_v2glowpart.j3o", -17.6f, 7.27f, 144.5f, 2.2f, 0.0000f, 0.5028f, 0.0000f, 0.8644f, 0f, 0f, 0f, 0f));
         placements.add(new Placement("Lampglow 35", "Models/objects/lamppost_v2/lamppost_v2glowpart.j3o", -10.8f, 7.27f, 148.1f, 2.2f, 0.0000f, 0.5028f, 0.0000f, 0.8644f, 0f, 0f, 0f, 0f));
         placements.add(new Placement("Lampglow 36", "Models/objects/lamppost_v2/lamppost_v2glowpart.j3o", -3.8f, 7.27f, 151.7f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 0f, 0f, 0f, 0f));
-
+        //hill lights
+        placements.add(new Placement("Lampglow 37", "Models/objects/lamppost_v2/lamppost_v2glowpart.j3o", 22.00449f, 7.27f, 233.24387f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 0f, 0f, 0f, 0f));
+        placements.add(new Placement("Lampglow 38", "Models/objects/lamppost_v2/lamppost_v2glowpart.j3o", 18.82552f, 7.27f, 233.94736f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 0f, 0f, 0f, 0f));
+        placements.add(new Placement("Lampglow 39", "Models/objects/lamppost_v2/lamppost_v2glowpart.j3o", 13.139362f, 7.27f, 235.2057f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 0f, 0f, 0f, 0f));
+        placements.add(new Placement("Lampglow 40", "Models/objects/lamppost_v2/lamppost_v2glowpart.j3o", 6.625704f,7.27f, 236.64716f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 0f, 0f, 0f, 0f));
+        placements.add(new Placement("Lampglow 41", "Models/objects/lamppost_v2/lamppost_v2glowpart.j3o", 2.0005705f, 7.27f, 237.65288f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 0f, 0f, 0f, 0f));
+        placements.add(new Placement("Lampglow 42", "Models/objects/lamppost_v2/lamppost_v2glowpart.j3o", -0.9674078f, 7.27f, 238.31314f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 0f, 0f, 0f, 0f));
+        placements.add(new Placement("Lampglow 43", "Models/objects/lamppost_v2/lamppost_v2glowpart.j3o", -9.907354f, 7.27f, 240.74576f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 0f, 0f, 0f, 0f));
+        placements.add(new Placement("Lampglow 44", "Models/objects/lamppost_v2/lamppost_v2glowpart.j3o", -6.6681237f, 7.27f, 239.46796f, 2.2f, 0.0000f, 0.4695f, 0.0000f, 0.8829f, 0f, 0f, 0f, 0f));
+        
         return placements;
     }
 
@@ -529,7 +558,45 @@ placements.add(new Placement("Tree 36", "Models/objects/trees/NormalTrees/pine.m
         placements.add(new Placement("Tree 83", "Models/Trees/WeepingWillow/tree.j3o", -6.062182f, 0f, 90.91095f,  0.5f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
         placements.add(new Placement("Tree 84", "Models/Trees/WeepingWillow/tree.j3o", 19.765871f, 0f, 75.54302f,  0.5f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
         placements.add(new Placement("Tree 85", "Models/Trees/WeepingWillow/tree.j3o", -17.6928f, 0f, 96.52544f,  0.5f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
-
+        placements.add(new Placement("Tree 87", "Models/objects/trees/NormalTrees/pine.mesh.xml", -42.316334f, 0f, 139.4815f,  0.7f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 88", "Models/objects/trees/NormalTrees/pine.mesh.xml", -41.27574f, 0f, 145.90015f,  0.45f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 89", "Models/objects/trees/NormalTrees/pine.mesh.xml", -40.130177f, 0f, 151.81831f,  0.54f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 90", "Models/objects/trees/NormalTrees/pine.mesh.xml", -39.078587f, 0f, 157.62346f,  0.43f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 91", "Models/objects/trees/NormalTrees/pine.mesh.xml", -37.211777f, 0f, 166.73755f, 0.39f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 92", "Models/objects/trees/NormalTrees/pine.mesh.xml", -35.113598f, 0f, 175.34508f,  0.5f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 93", "Models/objects/trees/NormalTrees/pine.mesh.xml", -44.212116f, 0f, 130.40736f,  0.62f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 94", "Models/objects/trees/NormalTrees/tree1.mesh.xml", -41.91491f, 0f, 179.78564f, .34f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 95", "Models/objects/trees/NormalTrees/tree1.mesh.xml", -42.524734f, 0f, 178.39624f, .29f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 96", "Models/objects/trees/NormalTrees/tree2.mesh.xml", -46.75807f, 0f, 174.41728f, .25f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 97", "Models/objects/trees/NormalTrees/tree2.mesh.xml", -45.017654f, 0f, 171.5656f, .25f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 98", "Models/objects/trees/NormalTrees/tree1.mesh.xml", -43.75302f, 0f, 168.60536f, .31f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 99", "Models/objects/trees/NormalTrees/tree1.mesh.xml", -43.90448f, 0f, 166.0874f, .32f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 100", "Models/objects/trees/NormalTrees/pine.mesh.xml", -43.009567f, 0f, 164.06436f,  0.7f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 101", "Models/objects/trees/NormalTrees/pine.mesh.xml", -46.706097f, 0f, 163.36f,  0.7f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 102", "Models/objects/trees/NormalTrees/pine.mesh.xml", -49.6497f, 0f, 165.27925f,  0.7f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 103", "Models/objects/trees/NormalTrees/tree2.mesh.xml", -52.35759f, 0f, 168.06946f,  .31f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 104", "Models/objects/trees/NormalTrees/tree2.mesh.xml", -54.288345f, 0f, 171.91992f, .3f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 105", "Models/objects/trees/NormalTrees/tree1.mesh.xml", -54.281372f, 0f, 175.6624f, .25f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 106", "Models/objects/trees/NormalTrees/tree1.mesh.xml", -53.044815f, 0f, 179.46721f, .29f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 107", "Models/objects/trees/NormalTrees/tree2.mesh.xml", -51.52011f, 0f, 182.43103f, .26f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 108", "Models/objects/trees/NormalTrees/pine.mesh.xml", -50.661297f, 0f, 184.10045f,  0.7f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 109", "Models/objects/trees/NormalTrees/pine.mesh.xml", -46.53146f, 0f, 141.9691f,  0.65f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 110", "Models/objects/trees/NormalTrees/pine.mesh.xml", -45.180878f, 0f, 148.19997f, .54f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 111", "Models/objects/trees/NormalTrees/pine.mesh.xml", -44.39747f, 0f, 152.74803f, .72f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 112", "Models/objects/trees/NormalTrees/pine.mesh.xml", -43.874744f, 0f, 156.24483f, .76f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        //hill trees
+        placements.add(new Placement("Tree 113", "Models/Trees/AspenAutumn/AspenAutumn.j3o", -9.335286f, 0f, 241.97876f,  0.2f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 114", "Models/Trees/AspenAutumn/AspenAutumn.j3o", -3.572348f, 0f, 240.59966f,  0.2f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 115", "Models/Trees/AspenAutumn/AspenAutumn.j3o", 5.9943175f, 0f, 238.273f,  0.2f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 116", "Models/Trees/AspenAutumn/AspenAutumn.j3o", 10.231564f, 0f, 237.29636f,  0.2f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 117", "Models/Trees/AspenAutumn/AspenAutumn.j3o", 15.5114565f, 0f, 235.94147f,  0.2f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 118", "Models/Trees/AspenAutumn/AspenAutumn.j3o", 21.070602f, 0f, 234.54227f,  0.2f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        placements.add(new Placement("Tree 119", "Models/Trees/AspenAutumn/AspenAutumn.j3o", 26.418161f, 0f, 233.31406f,  0.2f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+        //end hill trees
+       placements.add(new Placement("Tree 121", "Models/objects/trees/NormalTrees/pine.mesh.xml", 69.4682f, 0f, 143.61539f,  0.87f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+       placements.add(new Placement("Tree 122", "Models/objects/trees/NormalTrees/pine.mesh.xml", 71.9465f, 0f, 146.9894f,  0.78f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+       placements.add(new Placement("Tree 120", "Models/objects/trees/NormalTrees/pine.mesh.xml", 68.936134f, 0f, 134.38359f,  0.56f, 0.0000f, 0.0000f, 0.0000f, 0.0000f, 0f, .2f, 2f, .2f));
+       
         return placements;
     }
 
@@ -613,7 +680,7 @@ placements.add(new Placement("Tree 36", "Models/objects/trees/NormalTrees/pine.m
         placements.add(new Placement("WH", "Models/buildings/williams/williams.obj", 80.0f, 8.5f, 162.5f, 3.27f, 0f, 0.1005f, 0f, 0.9949f, 0f, 0f, 0f, 0f));
         placements.add(new Placement("HRS", "Models/buildings/safety/safety.obj", 81.6f, 9.4f, 171.5f, 0.52f, 0f, 0.0984f, 0f, 0.9951f, 0f, 0f, 0f, 0f));
         placements.add(new Placement("PHB", "Models/buildings/pharmacy/PHB.mesh.xml", -60f, 7.0f, 137f, 2f, 0f, -.4f, 0f, -0.2f, 0f, 0f, 0f, 0f));//subbed 8 from x,z
-        
+        placements.add(new Placement("SoccerBall", "Models/objects/soccer/soccerball.mesh.xml", -172.11838f, 9.5f, -81.93248f, 2f, 0.027875403f, 0.68859464f, -0.02650756f, 0.72412544f, 250f, .2f, .85f, .2f));
 		placements.add(new Placement("GOAL", "Models/objects/goal/Goal.mesh.xml", -170.5267f, 7.6f, -36.082657f, 2f, 0.027875403f, 0.68859464f, -0.02650756f, 0.72412544f, 0f, 0f, 0f, 0f));
         placements.add(new Placement("GOALs", "Models/objects/goal/Goal.mesh.xml",-170.5267f, 7.6f, -152.53018f, 2f, -0.0068384954f, -0.7758777f, -0.0084116375f, 0.63079023f, 0f, 0f, 0f, 0f));
         placements.add(new Placement("Lights1", "Models/objects/lights/fieldLight2.mesh.xml",-139.20836f, 4f, -55.836918f, 1f, 0.030133301f, -0.048293725f, 0.0014576054f, 0.9983775f, 0f, 0f, 0f, 0f));

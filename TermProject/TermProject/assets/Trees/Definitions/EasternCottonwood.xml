@@ -1,0 +1,11 @@
+<tree>
+	<trunkTextures>
+		<horizontalTiles>4</horizontalTiles>
+		<verticalTiles>12</verticalTiles>
+		<topTiles>1</topTiles>
+	</trunkTextures>	<stemTextures>
+		<horizontalTiles>4</horizontalTiles>
+		<verticalTiles>12</verticalTiles>
+		<topTiles>1</topTiles>
+	</stemTextures>
+</tree>
