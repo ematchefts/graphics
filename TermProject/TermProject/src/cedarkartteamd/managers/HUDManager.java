@@ -102,8 +102,8 @@ public class HUDManager implements ICedarKartManager {
         miniMapTrophy = new Picture("mini Map Marker");
         //the true is for y inverting the image
         miniMapTrophy.setImage(assetManager, "Interface/Game/book.png", true);
-        miniMapTrophy.setWidth(15);
-        miniMapTrophy.setHeight(15);
+        miniMapTrophy.setWidth(13);
+        miniMapTrophy.setHeight(13);
         //this is so it can be rotated around the center of the image rather
         //then around the bottom left corner
         markerNode = new Node();
