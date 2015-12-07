@@ -4,6 +4,7 @@ package cedarkartteamd.managers;
 import cedarkartteamd.managers.SettingsManager.Weather;
 import com.jme3.asset.AssetManager;
 import com.jme3.bullet.collision.shapes.CollisionShape;
+import com.jme3.bullet.collision.shapes.CompoundCollisionShape;
 import com.jme3.bullet.control.VehicleControl;
 import com.jme3.bullet.util.CollisionShapeFactory;
 import com.jme3.light.SpotLight;
@@ -166,7 +167,15 @@ public class VehicleManager implements ICedarKartManager {
         vehicle.setSuspensionStiffness(stiffness);
         vehicle.setMass(900);
         vehicle.setFriction(1);
-        vehicle.setFrictionSlip(1.8f);
+        
+        //Friction
+        if(weather.equals(SettingsManager.Weather.WINTER)){
+            vehicle.setFrictionSlip(1.8f);
+        }
+        else
+        {
+            vehicle.setFrictionSlip(5.0f);
+        }
 
         // Add Physics Control on Vehicle object
         vehicleNode.addControl(vehicle);
@@ -257,9 +266,6 @@ public class VehicleManager implements ICedarKartManager {
             lNode.addControl(new LightControl(sLight));
             rootNode.addLight(sLight);
         }
-        else if(weather.equals(SettingsManager.Weather.WINTER)){
-            vehicle.setFrictionSlip(1f);
-        }
         
         return new VehicleSet(vehicleNode, vehicle);
     }
@@ -293,8 +299,16 @@ public class VehicleManager implements ICedarKartManager {
         
         //create a car collision shape
         Node vehicleNode = new Node(player.getName());
-        CollisionShape carHull = CollisionShapeFactory.createDynamicMeshShape(player);
+        
+        //attempt to lower the center of mass
+        CompoundCollisionShape carHull = new CompoundCollisionShape();
+        carHull.addChildShape(CollisionShapeFactory.createDynamicMeshShape(player), new Vector3f(0f, 0.5f, 0f));
+        //CollisionShape carHull = CollisionShapeFactory.createDynamicMeshShape(player);
+        
+        player.setLocalTranslation(0, 0.5f, 0);
+        
         vehicleNode.attachChild(player);
+        
         VehicleControl vehicle = new VehicleControl(carHull, 40f);
         
         // adjust vehicle locations and rotations here
@@ -304,15 +318,15 @@ public class VehicleManager implements ICedarKartManager {
 
         //setting suspension values for wheels, this can be a bit tricky
         //see also https://docs.google.com/Doc?docid=0AXVUZ5xw6XpKZGNuZG56a3FfMzU0Z2NyZnF4Zmo&hl=en
-        float stiffness = 50.0f;//200=f1 car
+        float stiffness = 40.0f;//200=f1 car
         float compValue = .3f; //(should be lower than damp)
         float dampValue = .4f;
         vehicle.setSuspensionCompression(compValue * 2.0f * FastMath.sqrt(stiffness));
         vehicle.setSuspensionDamping(dampValue * 2.0f * FastMath.sqrt(stiffness));
         vehicle.setSuspensionStiffness(stiffness);
         vehicle.setMass(900);
-        vehicle.setFriction(0.5f);
-        vehicle.setFrictionSlip(1.5f);
+        vehicle.setFriction(1f);
+        vehicle.setFrictionSlip(10000.0f);
 
         // Add Physics Control on Vehicle object
         vehicleNode.addControl(vehicle);
@@ -320,14 +334,16 @@ public class VehicleManager implements ICedarKartManager {
         //Create four wheels and add them at their locations
         Vector3f wheelDirection = new Vector3f(0, -1, 0); // was 0, -1, 0
         Vector3f wheelAxle = new Vector3f(-1, 0, 0); // was -1, 0, 0
+
         float radiusf = 0.1f * vehicleScale;
         float radiusb = 0.1f * vehicleScale;
         float restLength = 0.3f * vehicleScale;
-        float yOff = -0.05f * vehicleScale;
+        float yOff = -0.05f * vehicleScale + 0.5f;
         float xOff = 0.76f * vehicleScale;
         float zOffFront = -0.61f * vehicleScale;
         float zOffBack = 0.71f * vehicleScale;
-        
+		
+		
         Cylinder wheelMeshf = new Cylinder(16, 16, radiusf, radiusf * 0.2f, true);
         Cylinder wheelMeshb = new Cylinder(16, 16, radiusb, radiusb * 0.2f, true);
         
