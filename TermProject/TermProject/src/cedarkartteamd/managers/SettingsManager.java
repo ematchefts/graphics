@@ -102,7 +102,7 @@ public class SettingsManager implements ICedarKartManager {
         weather = DEFAULT_WEATHER;
         vehicle = DEFAULT_VEHICLE;
         controller = -1;
-        winningScore = 5;
+        winningScore = 3;
         this.settings = settings;
     }
     
