@@ -152,7 +152,7 @@ public class HUDManager implements ICedarKartManager {
         currTrophy = new BitmapText(font);
         currTrophy.setColor(ColorRGBA.White);
         currTrophy.setSize(font.getPreferredSize() * 1.5f);
-        currTrophy.setText("Trophies: 0");
+        currTrophy.setText("Supplies: 0");
         currTrophy.setLocalTranslation(settingsMan.getWidth() - 140, settingsMan.getHeight() - 10, 0);
 
         gameTimes = new BitmapText(font);
@@ -213,7 +213,7 @@ public class HUDManager implements ICedarKartManager {
     }
 
     public void setScore(int trophies) {
-        currTrophy.setText("Trophies " + trophies);
+        currTrophy.setText("Supplies " + trophies);
     }
 
     public void setStartTime() {

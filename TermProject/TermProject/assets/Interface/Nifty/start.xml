@@ -13,6 +13,8 @@
     
     <screen id="start" controller="cedarkartteamd.controllers.NiftyStartController">
         <layer backgroundColor="#0000" childLayout="vertical" valign="bottom">
+            <text text="Help! A new student dropped her bookbag and the supplies were blown away in the wind."
+                font="Interface/Nifty/font/EUROCAPS48.fnt" width="50%" height="100%" wrap = "true"/>
             <panel />
             <panel childLayout="horizontal" height="185" width="100%" align="right" valign="center">
                 <panel childLayout="horizontal" width="50%" height="70" align="right" valign="center">
