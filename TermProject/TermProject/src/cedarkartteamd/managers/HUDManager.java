@@ -30,11 +30,13 @@ public class HUDManager implements ICedarKartManager {
     private Picture needle;
     private Node miniMap;
     private Picture background;
+    private Picture instructionsBackground;
     private BitmapText hudText;
     private int terrainSize = 513;
     private Node markerNode;
     private Node trophyNode;
     private BitmapText currTrophy;
+    private BitmapText instructions;
     private BitmapText gameTimes;
     private BitmapFont font;
     private long start;
@@ -65,6 +67,8 @@ public class HUDManager implements ICedarKartManager {
         initMinimap();
         initBackgroundOverlay();
         initOverlay();
+        initInstructionsBackground();
+        initInstructions();
         //Win();
     }
 
@@ -97,9 +101,9 @@ public class HUDManager implements ICedarKartManager {
 
         miniMapTrophy = new Picture("mini Map Marker");
         //the true is for y inverting the image
-        miniMapTrophy.setImage(assetManager, "Interface/Game/gold-trophy-icon.png", true);
-        miniMapTrophy.setWidth(10);
-        miniMapTrophy.setHeight(10);
+        miniMapTrophy.setImage(assetManager, "Interface/Game/book.png", true);
+        miniMapTrophy.setWidth(15);
+        miniMapTrophy.setHeight(15);
         //this is so it can be rotated around the center of the image rather
         //then around the bottom left corner
         markerNode = new Node();
@@ -163,6 +167,25 @@ public class HUDManager implements ICedarKartManager {
         guiNode.attachChild(currTrophy);
         guiNode.attachChild(gameTimes);
     }
+    
+    public void initInstructionsBackground(){
+        instructionsBackground = new Picture("Overlay");
+        instructionsBackground.setPosition(settingsMan.getWidth() - 800, settingsMan.getHeight() - 400);
+        instructionsBackground.setWidth(600);
+        instructionsBackground.setHeight(150);
+        instructionsBackground.setImage(assetManager, "Interface/Game/overlay.png", true);
+        guiNode.attachChild(instructionsBackground);
+    }
+    
+    public void initInstructions() {
+        instructions = new BitmapText(font);
+        instructions.setColor(ColorRGBA.White);
+        instructions.setSize(font.getPreferredSize() * 1.5f);
+        instructions.setText("Collect her school supplies as quickly as possible");
+        instructions.setLocalTranslation(settingsMan.getWidth() - 750, settingsMan.getHeight() - 300, 0);
+
+        guiNode.attachChild(instructions);
+    }
 
     void display(GUIMode guiMode) {
     }
@@ -225,6 +248,11 @@ public class HUDManager implements ICedarKartManager {
         diff = (end - start) / 1000;
         DecimalFormat nf2 = new DecimalFormat("#00");
         gameTimes.setText("Time: " + (int) (diff / 60) + ":" + nf2.format(diff % 60));
+        if ((diff % 60) == 4){
+            instructionsBackground.removeFromParent();
+            instructions.removeFromParent();
+        }
+           
     }
     
     public void removeHUD() {
