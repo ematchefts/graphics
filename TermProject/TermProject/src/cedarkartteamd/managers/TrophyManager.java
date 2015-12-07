@@ -64,8 +64,8 @@ public class TrophyManager implements ICedarKartManager {
 
     public void update() {
         //trophies
-       // placementMan.rotateObjects(placement);
-       // placementMan.bounceObjects(placement, (float)count.next());
+        placementMan.rotateObjects(placement);
+        placementMan.bounceObjects(placement, (float)count.next());
 
         float playerX = playerMan.getLocation().x;
         float playerY = playerMan.getLocation().y;
