@@ -589,16 +589,16 @@ public class PlacementManager implements ICedarKartManager {
     public ArrayList<Placement> createTrophyPlacements() {
         ArrayList<Placement> placements = new ArrayList<>();
 
-        placements.add(new Placement("Shomper", "Models/trophies/profs/", 8.58f, 9.08f, 161.36833f, .5f, 0.0000f, 0f, 0f, 0.5270f, 250f, .2f, .85f, .2f));
-        placements.add(new Placement("Schumacher", "Models/trophies/profs/", 65.49f, 8.28f, -34.76f, .5f, 0.0000f, 0f, 0f, 0.5270f, 250f, .2f, .85f, .2f));
-        placements.add(new Placement("Gallagher", "Models/trophies/profs/", 10.19f, 8.66f, -32.77f, .5f, 0.0000f, 0f, 0f, 0.5270f, 250f, .2f, .85f, .2f));
-        placements.add(new Placement("Hamman", "Models/trophies/profs/", -33.69f, 8.05f, 104.86f, .5f, 0.0000f, 0f, 0f, 0.5270f, 250f, .2f, .85f, .2f));
-        placements.add(new Placement("Kohl", "Models/trophies/profs/", 46.08f, 7.87f, 90.30f, .5f, 0.0000f, 0f, 0f, 0.5270f, 250f, .2f, .85f, .2f));
-        placements.add(new Placement("Fang", "Models/trophies/profs/", -20.66f, 8.65f, 140.98f, .5f, 0.0000f, 0f, 0f, 0.5270f, 250f, .2f, .85f, .2f));
-        placements.add(new Placement("Shomper", "Models/trophies/profs/", 44.66f, 9.11f, 159.73f, .5f, 0.0000f, 0f, 0f, 0.5270f, 250f, .2f, .85f, .2f));
-        placements.add(new Placement("Schumacher", "Models/trophies/profs/", 81.49f, 9.14f, 93.52f, .5f, 0.0000f, 0f, 0f, 0.5270f, 250f, .2f, .85f, .2f));
-        placements.add(new Placement("Gallagher", "Models/trophies/profs/", -37.62f, 8.80f, 1.71f, .5f, 0.0000f, 0f, 0f, 0.5270f, 250f, .2f, .85f, .2f));
-        placements.add(new Placement("Hamman", "Models/trophies/profs/", -59.88f, 8.10f, 53.60f, .5f, 0.0000f, 0f, 0f, 0.5270f, 250f, .2f, .85f, .2f));
+        placements.add(new Placement("book", "Models/trophies/supplies/", 8.58f, 9.08f, 161.36833f, .5f, 0.0000f, 0f, 0f, 0.5270f, 250f, .2f, .85f, .2f));
+        placements.add(new Placement("laptop", "Models/trophies/supplies/", 65.49f, 8.28f, -34.76f, .5f, 0.0000f, 0f, 0f, 0.5270f, 250f, .2f, .85f, .2f));
+        placements.add(new Placement("notebook", "Models/trophies/supplies/", 10.19f, 8.66f, -32.77f, .5f, 0.0000f, 0f, 0f, 0.5270f, 250f, .2f, .85f, .2f));
+        placements.add(new Placement("pencil", "Models/trophies/supplies/", -33.69f, 8.05f, 104.86f, .5f, 0.0000f, 0f, 0f, 0.5270f, 250f, .2f, .85f, .2f));
+        placements.add(new Placement("ruler", "Models/trophies/supplies/", 46.08f, 7.87f, 90.30f, .5f, 0.0000f, 0f, 0f, 0.5270f, 250f, .2f, .85f, .2f));
+        placements.add(new Placement("tablet", "Models/trophies/supplies/", -20.66f, 8.65f, 140.98f, .5f, 0.0000f, 0f, 0f, 0.5270f, 250f, .2f, .85f, .2f));
+        placements.add(new Placement("eraser", "Models/trophies/supplies/", 44.66f, 9.11f, 159.73f, .5f, 0.0000f, 0f, 0f, 0.5270f, 250f, .2f, .85f, .2f));
+        placements.add(new Placement("pen", "Models/trophies/supplies/", 81.49f, 9.14f, 93.52f, .5f, 0.0000f, 0f, 0f, 0.5270f, 250f, .2f, .85f, .2f));
+        placements.add(new Placement("book", "Models/trophies/supplies/", -37.62f, 8.80f, 1.71f, .5f, 0.0000f, 0f, 0f, 0.5270f, 250f, .2f, .85f, .2f));
+        placements.add(new Placement("notebook", "Models/trophies/supplies/", -59.88f, 8.10f, 53.60f, .5f, 0.0000f, 0f, 0f, 0.5270f, 250f, .2f, .85f, .2f));
 
         return placements;
     }
@@ -681,8 +681,8 @@ public class PlacementManager implements ICedarKartManager {
             } else {
                 mat.setTexture("ColorMap", assetManager.loadTexture(placement.filePath
                         + placement.getName() + ".png"));
-                mat.setTexture("GlowMap", assetManager.loadTexture(placement.filePath
-                        + placement.getName() + "Glow.png"));
+                /*mat.setTexture("GlowMap", assetManager.loadTexture(placement.filePath
+                        + placement.getName() + "Glow.png"));*/
             }
 
             geom.setMaterial(mat);
