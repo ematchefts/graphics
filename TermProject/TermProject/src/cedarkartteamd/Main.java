@@ -12,7 +12,7 @@ public class Main extends SimpleApplication {
         Main app = new Main();
         AppSettings settings = new AppSettings(true);
         settings.setUseJoysticks(true);
-        settings.setSettingsDialogImage("Interface/Game/cedarkartsplash.png");
+        settings.setSettingsDialogImage("Textures/icons/fullImage.png");
         settings.setResolution(1024, 768);
         app.setSettings(settings);
         app.start();

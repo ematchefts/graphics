@@ -1,0 +1,24 @@
+<scene formatVersion="1.0.1" exported_by="rjacubec" previous_export_time="1449442467.54334" export_time="1449442478.37334" >
+  <nodes >
+    <node name="Cylinder.019" >
+      <position x="0.000000" y="0.000000" z="-0.000000" />
+      <rotation qz="-0.000000" qw="1.000000" qy="0.000000" qx="0.000000" />
+      <scale x="1.000000" y="1.000000" z="1.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <entity lock_rot_z="False" meshFile="Cylinder.026.mesh" friction_y="1.0" physics_type="STATIC" ghost="False" velocity_min="0.0" lock_trans_z="False" friction_z="1.0" damping_trans="0.03999999910593033" inertia_tensor="0.4000000059604645" damping_rot="0.10000000149011612" actor="False" lock_rot_x="False" lock_rot_y="False" mass_radius="1.0" velocity_max="0.0" anisotropic_friction="False" lock_trans_y="False" mass="1.0" friction_x="1.0" lock_trans_x="False" name="Cylinder.026" />
+    </node>
+  </nodes>
+  <externals >
+    <item type="material" >
+      <file name="C:\Users\rjacubec.CL-ENS242-08\Documents\goal\Material.001.material" />
+    </item>
+  </externals>
+  <environment >
+    <colourDiffuse r="0.05087608844041824" g="0.05087608844041824" b="0.05087608844041824" />
+    <colourBackground r="0.05087608844041824" g="0.05087608844041824" b="0.05087608844041824" />
+    <colourAmbient r="0.0" g="0.0" b="0.0" />
+  </environment>
+</scene>
